@@ -1,0 +1,11 @@
+{
+    "data": [
+        {
+            "id": "1",
+            "title": "FAQ 1",
+            "category": "Category-FAQ",
+            "details": "Lorem ipsum dolor amet, adipiscing elit"
+        }
+    ],
+    "totalData": 1
+}

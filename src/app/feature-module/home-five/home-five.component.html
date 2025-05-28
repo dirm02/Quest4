@@ -1,0 +1,817 @@
+<app-home-five-header></app-home-five-header>
+<!-- Hero Section -->
+<section class="catering-banner-section">
+    <div class="container">
+        <div class="home-banner slider-service">
+            <div class="row align-items-center w-100">
+                <div class="col-lg-7 col-md-10 mx-auto">
+                    <div class="section-search section-search-four">
+                        <h1>Reviews & Ratings of Best <span>Catering Service</span> Providers Near You</h1>
+                        <p>Helped 10,000+ Customers to find the right caterers for their functions and events
+                            around the world.</p>
+                        <div class="search-box search-box-four">
+                            <form action="/" class="search-three-form">
+                                <div class="search-input search-input-three search-input-four">
+                                    <i class="feather icon-check-square"></i>
+                                    <div class="form-group m-0 value-select">
+                                        <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="select"  placeholder="Select Category">
+                                            <mat-option *ngFor="let data of selectedList" [value]="data.value">
+                                            {{data.value}}
+                                            </mat-option>
+                                        </mat-select>
+                                    </div>
+                                </div>
+                                <div class="search-input search-input-three search-input-four">
+                                    <i class="feather icon-map-pin me-2"></i>
+                                    <div class="form-group mb-0">
+                                        <input class="form-control" type="text" placeholder="Location">
+                                    </div>
+                                </div>
+                                <div class="search-btn">
+                                    <button class="btn btn-primary" type="submit"><i
+                                            class="feather icon-search me-2"></i></button>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="catering-banner-botton d-flex flex-wrap row-gap-3">
+                            <div class="catering-btn-services d-flex align-items-center">
+                                <div class="catering-btn-icon d-flex justify-content-center align-items-center rounded me-2 mb-0">
+                                    <img src="assets/img/icons/server-icon.svg" alt="Icon">
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">3000+</h5>
+                                    <h6>Services</h6>
+                                </div>
+                            </div>
+                            <div class="catering-btn-services d-flex align-items-center">
+                                <div class="catering-btn-icon d-flex justify-content-center align-items-center rounded me-2 mb-0">
+                                    <img src="assets/img/icons/Fries-icon.svg" alt="Icon">
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">900+</h5>
+                                    <h6>Food Items</h6>
+                                </div>
+                            </div>
+                            <div class="catering-btn-services d-flex align-items-center">
+                                <div class="catering-btn-icon d-flex justify-content-center align-items-center rounded me-2 mb-0">
+                                    <img src="assets/img/icons/star-icon.svg" alt="Icon">
+                                </div>
+                                <div>
+                                    <h5 class="mb-0">Review</h5>
+                                    <h6>15k (4.8)</h6>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="catering-banner-img">
+                        <img src="assets/img/catering/catering-banner.jpg" alt="banner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Hero Section -->
+
+<!-- Feature Section -->
+<section class="nearby-section">
+    <div class="container">
+        <div class="section-heading section-heading-four">
+            <div class="row align-items-center">
+                <div class="col-md-6 aos" data-aos="fade-up">
+                    <h2>Nearby Caters For You</h2>
+                    <p>Here’s a list of popular locations around the world, categorized by region, that are often sought after for various reasons.</p>
+                </div>
+                <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                    <a [routerLink]="routes.serviceList" class="btn btn-primary btn-view">View All<i
+                        class="feather icon-arrow-right"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="catering-slider common-four-slider">
+                    <owl-carousel-o [options]="catersOwl">
+                        <ng-container *ngFor="let data of caters">
+                          <ng-template carouselSlide>
+                    <div class="service-widget service-two service-four aos" data-aos="fade-up">
+                        <div class="service-common-four">
+                            <div class="service-img">
+                                <a [routerLink]="routes.serviceDetails">
+                                    <img class="img-fluid serv-img" alt="Service Image"
+                                        [src]="data.img1">
+                                </a>
+                            </div>
+                            <div class="service-content">
+                                <div class="catering-main-bottom">
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <span>{{data.reviews}}</span>
+                                    </div>
+                                    <h3 class="title">
+                                        <a [routerLink]="routes.serviceDetails">{{data.content}}</a>
+                                    </h3>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="service-content-bottom">
+                            <div class="service-cater-img">
+                                <img [src]="data.img2" alt="img">
+                                <p>{{data.name}}</p>
+                            </div>
+                            <h6>{{data.km}}</h6>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+            </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Feature Section -->
+
+<!-- Categories Section -->
+<section class="categories-section">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="section-heading category-heading aos" data-aos="fade-up">
+                <h2>Catering Service Categories</h2>
+                <p>Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur vehicula</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-xl-3 col-lg-3 col-md-3 d-flex ">
+            <a [routerLink]="routes.serviceDetails" class="w-100">
+            <div class="categories-main-all flex-fill">
+                <div class="categories-img">
+                    <span class="active">
+                        <img src="assets/img/icons/catering-07.svg" alt="categories">
+                    </span>
+                </div>
+                <h6>Event </h6>
+                <span class="category-bottom">
+                    <i class="feather icon-chevron-right "></i>
+                </span>
+            </div>
+            </a>
+        </div>
+
+        <div class="col-xl-3 col-lg-3 col-md-3 d-flex">
+            <a [routerLink]="routes.serviceDetails" class="w-100">
+            <div class="categories-main-all flex-fill">
+                <div class="categories-img">
+                    <span>
+                        <img src="assets/img/icons/catering-01.svg" alt="categories">
+                    </span>
+                </div>
+                <h5>Birthday Party</h5>
+                <span class="category-bottom">
+                    <i class="feather icon-chevron-right "></i>
+                </span>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 d-flex ">
+            <a [routerLink]="routes.serviceDetails" class="w-100">
+            <div class="categories-main-all flex-fill">
+                <div class="categories-img">
+                    <span>
+                        <img src="assets/img/icons/catering-02.svg" alt="categories">
+                    </span>
+                </div>
+                <h6>Indoor </h6>
+                <span class="category-bottom">
+                    <i class="feather icon-chevron-right "></i>
+                </span>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 d-flex">
+            <a [routerLink]="routes.serviceDetails" class="w-100">
+            <div class="categories-main-all">
+                <div class="categories-img">
+                    <span>
+                        <img src="assets/img/icons/catering-03.svg" alt="categories">
+                    </span>
+                </div>
+                <h5>Outdoor</h5>
+                <span class="category-bottom">
+                    <i class="feather icon-chevron-right "></i>
+                </span>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 d-flex">
+            <a [routerLink]="routes.serviceDetails" class="w-100">
+            <div class="categories-main-all">
+                <div class="categories-img">
+                    <span>
+                        <img src="assets/img/icons/catering-04.svg" alt="categories">
+                    </span>
+                </div>
+                <h5>International  </h5>
+                <span class="category-bottom">
+                    <i class="feather icon-chevron-right "></i>
+                </span>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 d-flex ">
+            <a [routerLink]="routes.serviceDetails" class="w-100">
+            <div class="categories-main-all">
+                <div class="categories-img">
+                    <span>
+                        <img src="assets/img/icons/catering-08.svg" alt="categories">
+                    </span>
+                </div>
+                <h5>Buffet</h5>
+                <span class="category-bottom">
+                    <i class="feather icon-chevron-right "></i>
+                </span>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 d-flex ">
+            <a [routerLink]="routes.serviceDetails" class="w-100">
+            <div class="categories-main-all">
+                <div class="categories-img">
+                    <span>
+                        <img src="assets/img/icons/catering-05.svg" alt="categories">
+                    </span>
+                </div>
+                <h5>Kitty Party</h5>
+                <span class="category-bottom">
+                    <i class="feather icon-chevron-right "></i>
+                </span>
+            </div>
+            </a>
+        </div>
+        <div class="col-xl-3 col-lg-3 col-md-3 d-flex ">
+            <a [routerLink]="routes.serviceDetails" class="w-100">
+            <div class="categories-main-all">
+                <div class="categories-img">
+                    <span>
+                        <img src="assets/img/icons/catering-06.svg" alt="categories">
+                    </span>
+                </div>
+                <h5>Party </h5>
+                <span class="category-bottom">
+                    <i class="feather icon-chevron-right "></i>
+                </span>
+            </div>
+            </a>
+        </div>
+       
+      
+        <div class="btn-sec btn-catering aos" data-aos="fade-up">
+            <a [routerLink]="routes.categories" class="btn btn-primary btn-view">View all Categories<i class="feather icon-arrow-right"></i></a>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- /Categories Section -->
+
+<!-- Features Services -->
+<section class="features-four-section">
+<div class="container">
+    <div class="section-heading section-heading-four">
+        <div class="row align-items-center">
+            <div class="col-md-6 aos" data-aos="fade-up">
+                <h2>Featured Caters</h2>
+                <p>Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur vehicula</p>
+            </div>
+            <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                <a [routerLink]="routes.serviceDetails" class="btn btn-primary btn-view">View all Catterers<i
+                        class="feather icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12"> 
+            <div class="features-four-slider common-four-slider">
+                <owl-carousel-o [options]="featuredCatersOwl">
+                    <ng-container *ngFor="let data of featuredCaters">
+                      <ng-template carouselSlide>
+                <div class="service-widget service-two aos" data-aos="fade-up">
+                    <div class="service-img service-four-img">
+                        <a [routerLink]="routes.serviceDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                [src]="data.img">
+                        </a>
+                        <div class="fav-item">
+                            <div class="rate-four">
+                                <i class="fas fa-star filled"></i><span>{{data.rating}}</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="service-content service-four-content">
+                        <h3 class="title">
+                            <a [routerLink]="routes.serviceDetails">{{data.caters}}</a>
+                        </h3>
+                        <p class="service-cater-bottom"><i class="feather icon-map-pin"></i>{{data.country}}</p>
+                        <p>{{data.para}}</p>
+                        <ul>
+                            <li>{{data.caterings}}</li>
+                            <li>{{data.status}}</li>
+                            <li *ngIf="data.status2 === 'Kitty Partying'">{{data.status2}}</li>
+                            <li *ngIf="data.status3 === 'international'">{{data.status2}}</li>
+                        </ul>
+                        <div class="category-feature-bottom">
+                            <p>{{data.price}}</p>
+                            <a href="javascript:void(0);">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </ng-container>
+        </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- /Features Services -->
+
+<!-- Categories Section -->
+<section class="trust-us-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading section-heading-four category-heading aos" data-aos="fade-up">
+                    <h2>Why Trust us</h2>
+                    <p>We are growing day by day in terms of catering service providers listing,</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center row-gap-3">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="trust-us-main flex-fill">
+                    <div class="trust-us-img">
+                        <i class="feather icon-star"></i>
+                    </div>
+                    <h6 class="text-truncate">Verified Reviews</h6>
+                    <p>We has more than 4000 Caterers & catering service companies (and counting) listed with
+                        detailed information</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="trust-us-main flex-fill">
+                    <div class="trust-us-img">
+                        <i class="ti ti-coffee"></i>
+                    </div>
+                    <h6 class="text-truncate">Catering Services</h6>
+                    <p>We has more than 4000 Caterers & catering service companies (and counting) listed with
+                        detailed information</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="trust-us-main flex-fill">
+                    <div class="trust-us-img">
+                        <i class="feather icon-file-text"></i>
+                    </div>
+                    <h6 class="text-truncate">Research & Surveys</h6>
+                    <p>We has more than 4000 Caterers & catering service companies (and counting) listed with
+                        detailed information</p>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="trust-us-main flex-fill">
+                    <div class="trust-us-img">
+                        <i class="feather icon-briefcase"></i>
+                    </div>
+                    <h6 class="text-truncate">Experience In Business</h6>
+                    <p>We has more than 4000 Caterers & catering service companies (and counting) listed with
+                        detailed information</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Categories Section -->
+
+
+
+<!-- Popular Services -->
+<section class="popular-four-section">
+<div class="container">
+    <div class="section-heading section-heading-four">
+        <div class="row align-items-center">
+            <div class="col-md-6 aos" data-aos="fade-up">
+                <h2>Popular Locations</h2>
+                <p>One of the biggest advantages of using a service marketplace is the access to a wide range of services.</p>
+            </div>
+            <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                <a [routerLink]="routes.categories" class="btn btn-primary btn-view">View all Location<i
+                        class="feather icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="popular-four-main">
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                
+                <div class="popular-portfolio">
+                    <a href="javascript:void(0);">
+                    <div class="popular-portfolio-img">
+                        <img src="assets/img/gallery/gallery-img-5.jpg" alt="image">
+                        <div class="popular-portfolio-overlay">
+                            <h6>NewYork</h6>
+                            <p>165 Caterings</p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="javascript:void(0);">
+                    <div class="popular-portfolio-img">
+                        <img src="assets/img/gallery/gallery-img-6.jpg" alt="image">
+                        <div class="popular-portfolio-overlay">
+                            <h6>Los Angels</h6>
+                            <p>45 Caterings</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="popular-portfolio">
+                    <a href="javascript:void(0);">
+                    <div class="popular-portfolio-img">
+                        <img src="assets/img/gallery/gallery-img-4.jpg" alt="image">
+                        <div class="popular-portfolio-overlay">
+                            <h6>Istanbul</h6>
+                            <p>30 Caterings</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="popular-portfolio">
+                    <a href="javascript:void(0);">
+                    <div class="popular-portfolio-img">
+                        <img src="assets/img/gallery/gallery-img-7.jpg" alt="image">
+                        <div class="popular-portfolio-overlay">
+                            <h6>Paris</h6>
+                            <p>47 Caterings</p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="javascript:void(0);">
+                    <div class="popular-portfolio-img">
+                        <img src="assets/img/gallery/gallery-img-8.jpg" alt="image">
+                        <div class="popular-portfolio-overlay">
+                            <h6>London</h6>
+                            <p>78 Caterings</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-3 col-sm-6 col-12">
+                <div class="popular-portfolio">
+                    <a href="javascript:void(0);">
+                    <div class="popular-portfolio-img">
+                        <img src="assets/img/gallery/gallery-img-9.jpg" alt="image">
+                        <div class="popular-portfolio-overlay">
+                            <h6>Florida</h6>
+                            <p>14 Caterings</p>
+                        </div>
+                    </div>
+                    </a>
+                    <a href="javascript:void(0);">
+                    <div class="popular-portfolio-img">
+                        <img src="assets/img/gallery/gallery-img-10.jpg" alt="image">
+                        <div class="popular-portfolio-overlay">
+                            <h6>Miami</h6>
+                            <p>54 Caterings</p>
+                        </div>
+                    </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- /Popular Services -->
+
+
+<!-- Working Section -->
+<section class="Working-four-section">
+<div class="container">
+    <div class="row">
+        <div class="col-md-12 text-center">
+            <div class="section-heading working-four-heading aos" data-aos="fade-up">
+                <p>Working Steps</p>
+                <h2 class="mb-0">How we are working</h2>
+            </div>
+        </div>
+    </div>
+    <div class="row justify-content-center">
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="working-four-main">
+                <h6>Step 1</h6>
+                <div class="working-four-img">
+                    <img src="assets/img/icons/working-1.svg" alt="">
+                </div>
+                <h4 class="mb-2 text-truncate">Choose a Service Category</h4>
+                <p>Select the type of catering service you are looking for </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="working-four-main">
+                <h6>Step 2</h6>
+                <div class="working-four-img">
+                    <img src="assets/img/icons/working-2.svg" alt="">
+                </div>
+                <h4 class="mb-2 text-truncate">Choose a Service Category</h4>
+                <p>Select the type of catering service you are looking for </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="working-four-main">
+                <h6>Step 3</h6>
+                <div class="working-four-img">
+                    <img src="assets/img/icons/working-3.svg" alt="">
+                </div>
+                <h4 class="mb-2 text-truncate">Check Catererings Details</h4>
+                <p>Select the type of catering service you are looking for </p>
+            </div>
+        </div>
+        <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+            <div class="working-four-main">
+                <h6>Step 4</h6>
+                <div class="working-four-img">
+                    <img src="assets/img/icons/working-4.svg" alt="">
+                </div>
+                <h4 class="mb-2 text-truncate">Book the best catererings</h4>
+                <p>Select the type of catering service you are looking for </p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!--/ Working Section -->
+
+<!-- Around the world  Services -->
+<section class="around-world-section">
+<div class="container">
+    <div class="section-heading section-heading-four">
+        <div class="row align-items-center">
+            <div class="col-md-6 aos" data-aos="fade-up">
+                <h2>Top Caterers Around the World</h2>
+                <p>Here’s a list of popular locations around the world, categorized by region</p>
+            </div>
+            <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                <a [routerLink]="routes.categories" class="btn btn-primary btn-view">view all Caterers<i
+                        class="feather icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="world-four-slider common-four-slider">
+                <owl-carousel-o [options]="topCatersOwl">
+                    <ng-container *ngFor="let data of topCaters">
+                      <ng-template carouselSlide>
+                        <div class="service-widget aos" data-aos="fade-up">
+                            <div class="service-img">
+                                <a [routerLink]="routes.serviceDetails">
+                                    <img class="img-fluid serv-img" alt="Service Image"
+                                        [src]="data.img1">
+                                </a>
+                                <div class="fav-item fav-item-four">
+                                    <a href="javascript:void(0)" class="fav-icon" (click)="data.like = !data.like" [ngClass]="{'selected' : data.like === true}">
+                                        <i class="feather icon-heart"></i>
+                                    </a>
+                                </div>
+                                <div class="item-info item-info-four">
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-content service-four-content">
+                                <h3 class="title">
+                                    <a [routerLink]="routes.serviceDetails">{{data.title}}</a>
+                                </h3>
+                                <p>{{data.para}}</p>
+                                <ul>
+                                    <li>{{data.caterings}}</li>
+                                    <li>{{data.status}}</li>
+                                </ul>
+                                <p><span class="mini-mealmenu">{{data.price1}}</span><span class="mealmenu">{{data.price2}}</span></p>
+                            </div>
+                            <div class="service-content-bottom">
+                                <div class="service-cater-img service-world-img">
+                                    <a href="javascript:void(0);"><img [src]="data.img2" alt="img"></a>
+                                    <p class="service-cater-bottom"><i class="feather icon-map-pin"></i>{{data.country}}</p>
+                                </div>
+                                <span><i class="feather icon-calendar"></i></span>
+                            </div>
+                        </div>
+                    </ng-template>
+                </ng-container>
+                </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- /Around the world  Services -->
+<section class="review-client-section">
+<div class="container">
+    <div class="section-heading section-heading-four">
+        <div class="row align-items-center">
+            <div class="col-md-6 aos" data-aos="fade-up">
+                <h2>Reviews from our Clients</h2>
+                <p>Description highlights the value of client feedback, showcases real testimonials</p>
+            </div>
+            <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                <a href="javascript:void(0)" class="btn btn-primary btn-view">View all Reviews<i
+                        class="feather icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class="client-four-slider common-four-slider">
+                <owl-carousel-o [options]="clientReviewOwl">
+                    <ng-container *ngFor="let data of clientReview">
+                      <ng-template carouselSlide>
+                <div class="client-review-main">
+                    <div class="client-review-top">
+                        <div class="client-review-name">
+                            <h6>{{data.name}}</h6>
+                            <div class="rating">
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                                <i class="fas fa-star filled"></i>
+                            </div>
+                        </div>
+                        <p>{{data.para}}
+                        </p>
+                    </div>
+                    <div class="client-review-img avatar avatar-xl p-1 bg-white rounded-circle">
+                        <img [src]="data.img" alt="img" class="rounded-circle">
+                    </div>
+                </div>
+            </ng-template>
+        </ng-container>
+        </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+    <div id="company-slider" class=" owl-theme testimonial-slider aos" data-aos="fade-up">
+        <owl-carousel-o [options]="companyOwl">
+            <ng-container *ngFor="let data of company">
+              <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  [src]="data.img" alt="">
+        </div>
+                </ng-template>
+            </ng-container>
+            </owl-carousel-o>
+    </div>
+    <div id="company-slider" class="owl-theme testimonial-slider2 common-four-slider aos" data-aos="fade-up">
+        <owl-carousel-o [options]="testimonial">
+            <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  src="assets/img/catering/logo-01.svg" class="img-fluid" alt="Logo">
+        </div>
+    </ng-template>
+    <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  src="assets/img/catering//logo-02.svg" class="img-fluid" alt="Logo">
+        </div>
+        </ng-template>
+        <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  src="assets/img/catering//logo-03.svg" class="img-fluid" alt="Logo">
+        </div>
+        </ng-template>
+        <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  src="assets/img/catering//logo-06.svg" class="img-fluid" alt="Logo">
+        </div>
+        </ng-template>
+        <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  src="assets/img/catering//logo-04.svg" class="img-fluid" alt="Logo">
+        </div>
+        </ng-template>
+        <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  src="assets/img/catering//logo-05.svg" class="img-fluid" alt="Logo">
+        </div>
+        </ng-template>
+        <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  src="assets/img/catering/logo-03.svg" class="img-fluid" alt="Logo">
+        </div>
+        </ng-template>
+        <ng-template carouselSlide>
+        <div class="company-logos">
+            <img  src="assets/img/catering//logo-06.svg" class="img-fluid" alt="Logo">
+        </div>
+        </ng-template>
+        </owl-carousel-o>
+    </div>
+</div>
+</section>
+<!-- /Reviews from our Clients -->
+
+<!-- Interesting & Useful Blogs section -->
+<section class="useful-blog-section">
+<div class="container">
+    <div class="section-heading section-heading-four">
+        <div class="row">
+            <div class="col-md-6 aos" data-aos="fade-up">
+                <h2>Interesting & Useful Blogs</h2>
+                <p>Here’s a compelling blog description designed to provide a clear idea</p>
+            </div>
+            <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                <a [routerLink]="routes.blogDetails" class="btn btn-primary btn-view">View all Blogs<i
+                        class="feather icon-arrow-right"></i></a>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <div class=" useful-four-slider common-four-slider">
+                <owl-carousel-o [options]="usefulBlogsOwl">
+                    <ng-container *ngFor="let data of usefulBlogs">
+                      <ng-template carouselSlide>
+                <div class="service-widget aos" data-aos="fade-up">
+                    <div class="service-img">
+                        <a [routerLink]="routes.blogDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                [src]="data.img1">
+                        </a>
+                    </div>
+                    <div class="service-content service-four-blogs">
+                        <h3 class="title">
+                            <a [routerLink]="routes.blogDetails">{{data.para}} </a>
+                        </h3>
+                        <p>{{data.para2}}</p>
+                        <div class="usefull-bottom">
+                            <div class="d-flex align-items-center">
+                                <span class="useful-img avatar avatar-lg me-2">
+                                    <a [routerLink]="routes.customerProfile"><img [src]="data.img2" alt="" class="rounded-circle" alt="User"></a>
+                                </span>
+                                <span class="fs-14">{{data.name}}</span>
+                            </div>
+                            <div>
+                                <span class="fs-14"><i class="ti ti-calendar me-1"></i>09 Aug 2025</span>
+                            </div>
+                           
+                        </div>
+                    </div>
+                </div>
+            </ng-template>
+        </ng-container>
+        </owl-carousel-o>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+<!-- /Interesting & Useful Blogs section -->
+    <!-- scrollToTop start -->
+    <!-- <div
+      (click)="scrollToTop()" (keydown.enter)="scrollToTop()" tabindex="0"
+      class="progress-wrap"
+      [class.active-progress]="strokeValue < progress"
+    >
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="transition: stroke-dashoffset 10ms linear 0s"
+          attr.stroke-dasharray="{{ progress + 'px' + ',' + progress + 'px' }}"
+          attr.stroke-dashoffset="{{ strokeValue + 'px' }}"
+        ></path>
+      </svg>
+    </div> -->
+    <!-- scrollToTop end -->
+    <app-home-five-footer></app-home-five-footer>

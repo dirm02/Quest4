@@ -1,0 +1,12 @@
+{
+    "data" : [
+            {
+                "date": "22 Sep 2022, 11:40:30",
+                "device": "Chrome - Windows",
+                "ipAddress": "0.0.0.0",
+                "location": "Unknown",
+                "status": "Completed"
+            }
+        ],
+        "totalData" : 1
+}

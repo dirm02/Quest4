@@ -1,0 +1,19 @@
+{
+    "data" : [
+        {
+            "id": "1",
+            "countryCode": "AR",
+            "countryId": "54",
+            "countryName": "Argentina (+54)",
+            "img": "assets/admin/img/flags/ar.png"
+        },
+        {
+            "id": "2",
+            "countryCode": "AU",
+            "countryId": "67",
+            "countryName": "Australia (+61)",
+            "img": "assets/admin/img/flags/au.png"
+        }
+    ],
+    "totalData": 2
+}

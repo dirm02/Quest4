@@ -1,0 +1,14 @@
+{
+    "data" : [
+	{
+		"id": "1",
+		"userName": "Wallet",
+        "email": "johnsmith@gmail.com",
+		"phone": "+1 843-443-3282",
+		"balance": "$1000",
+		"action": "History",
+        "img": "assets/admin/img/customer/user-01.jpg"
+	}
+],
+"totalData": 1
+}

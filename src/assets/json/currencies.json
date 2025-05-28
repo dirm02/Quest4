@@ -1,0 +1,23 @@
+{
+    "data": [
+        {
+            "currencyName": "US Dollar",
+            "code": "USD",
+            "symbol": "$",
+            "exchangeRate": "Default"
+        },
+        {
+            "currencyName": "EU Euro",
+            "code": "EUR",
+            "symbol": "€",
+            "exchangeRate": "Default"
+        },
+        {
+            "currencyName": "England Pound",
+            "code": "GBP",
+            "symbol": "£",
+            "exchangeRate": "Default"
+        }
+    ],
+    "totalData":3
+}

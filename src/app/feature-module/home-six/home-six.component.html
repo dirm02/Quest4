@@ -1,0 +1,834 @@
+<app-home-six-header></app-home-six-header>
+<section class="hero-section-six">
+
+<div class="container">
+    
+    <div class="home-banner home-banner-six">
+        <div class="row w-100 justify-content-center ">
+            <div class="col-lg-6 col-12">
+                <div class="home-banner-main d-none  d-lg-block">
+                    <img src="assets/img/services/service-82.png" alt="Image" class="img-fluid">
+                    
+                </div>
+
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="home-banner-six-bottom">
+                    <div class="home-banner-six-detergent">
+                        <span class="rounded-circle"><img src="assets/img/icons/window-cleaner.svg" alt="icon"></span>
+                        <p class="fs-16">Affordable & Reliable </p>
+                    </div>
+                    <h1 class="mb-2 display-5">Professional Cleaning Service <span class="text-primary">You Can Trust</span></h1>
+                    <p>Our professional cleaning service comes up with a complete solution that makes your
+                        space sparkle!</p>
+                    <div class="search-box-two search-box-six">
+                        <form action="/">
+                            <div class="search-input-new line-six">
+                                <div class="form-group mb-0 ">
+                                    <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="select-arrow select-content-data select"  placeholder="Service type">
+                                        <mat-option *ngFor="let data of selectedList" [value]="data.value">
+                                        {{data.value}}
+                                        </mat-option>
+                                    </mat-select>
+                                </div>
+                            </div>
+                            <div class="search-input-new line-two-six">
+                                <div class="form-group mb-0 ">
+                                    <input type="text" class="form-control" placeholder="Location">
+                                </div>
+                            </div>
+                            <div class="search-btn">
+                                <a [routerLink]="routes.bookingDetails" class="btn search_service" type="submit" >Book Now</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+</section>
+<!-- Choose Us -->
+<section class="reason-choose-us">
+    <div class="container">
+        <div class="section-heading section-heading-six">
+            <div class="row">
+                <div class="col-md-12 col-12 aos" data-aos="fade-up">
+                    <div class="reason-six">
+                        <img src="assets/img/icons/cleaner-svgrepo-com.svg" alt="image" class="rounded-circle">
+                        <p>WHY TRUELY SELL?</p>
+                    </div>
+                    <h2>Reasons to <span>Choose Us</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="total-client-all">
+                    <ul class="total-client-half">
+                        <li class="total-client-mini">
+                            <div class="total-experts-main">
+                                <h3>540</h3>
+                                <p>Total<span>Experts</span></p>
+                            </div>
+                        </li>
+                        <li class="total-client-mini">
+                            <div class="total-experts-main">
+                                <h3>215</h3>
+                                <p>Total<span>Clients</span></p>
+                            </div>
+                        </li>
+                        <li>
+                            <ul class="total-client-avatar">
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/profiles/avatar-06.jpg" alt="User">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/profiles/avatar-07.jpg" alt="image">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/profiles/avatar-08.jpg" alt="image">
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="javascript:void(0);">
+                                        <img src="assets/img/profiles/avatar-09.jpg" alt="User">
+                                    </a>
+                                </li>
+                                <li class="more-set">
+                                    <a href="javascript:void(0);">
+                                        <i class="feather icon-plus"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div>
+                        <p class="total-client-content">Informed decisions and contributes to the overall quality of the marketplace. It also provides valuable insights to the provider for future improvements.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-sm-4 col-12 ">
+                <div class="professional-cleaning-main ">
+                    <img src="assets/img/icons/quality-svgrepo-com.svg" alt="image" class="rounded-circle">
+                    <h5 class="text-truncate">High Quality Cleaning</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-12">
+                <div class="professional-cleaning-main">
+                    <img src="assets/img/icons/cdn-globe-locations-svgrepo-com.svg" alt="image" class="rounded-circle">
+                    <h5>Global Locations</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-12">
+                <div class="professional-cleaning-main">
+                    <img src="assets/img/icons/support.svg" alt="image" class="rounded-circle">
+                    <h5>Anytime Support</h5>
+                </div>
+            </div>
+            <div class="col-lg-3 col-sm-4 col-12">
+                <div class="professional-cleaning-main">
+                    <img src="assets/img/icons/money-cash-svgrepo-com.svg" alt="image" class="rounded-circle">
+                    <h5>Spend Efficiently</h5>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Choose Us -->
+
+<!-- About Our Company -->
+<section class="about-our-company">
+    <div class="our-company-img">
+        <img src="assets/img/bg/wave.png" alt="image" class="img-fluid">
+    </div>
+    <div class="container">
+        <div class="section-heading section-heading-six">
+            <div class="row">
+                <div class="col-md-9 col-12 aos" data-aos="fade-up">
+                    <div class="reason-six">
+                        <img src="assets/img/icons/window-cleaner-detergent-svgrepo-com.svg" alt="">
+                        <p>BEST CLEANING SERVICE</p>
+                    </div>
+                    <h2><span>About </span>Our Company</h2>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-12">
+                <div class="our-company-six">
+                    <p>
+                        A service marketplace can be a powerful tool for entrepreneurs looking to access 
+                        specialized skills and support. By following these tips, you can navigate the marketplace 
+                        effectively, find the right 
+                        service providers, and enhance your business operations. Ready to get started? 
+                    </p>
+                </div>
+                <div class="aboutus-companyimg">
+                    <div class="our-company-overlay-img d-none d-lg-block">
+                        <img src="assets/img/bg/buttom-wave.png" alt="img">
+                    </div>
+                    <a href="javascript:void(0);">
+                        <img src="assets/img/services/service-84.png" alt="img">
+                    </a>
+                    <a href="javascript:void(0);" data-bs-toggle="modal" data-bs-target="#video">
+                        <div class="playicon">
+                            <span>
+                                <i class="feather icon- icon-play"></i>
+                            </span>
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="our-company-ryt d-none d-lg-block">
+                    <div class="bg-overlay-img d-none d-lg-block">
+                        <img src="assets/img/bg/our-company-bg.png" alt="img" class="img-fluid">
+                    </div>
+                    <div class="our-company-bg">
+                        <img src="assets/img/bg/our-company-six.png" alt="image" class="img-fluid">
+                    </div>
+                    <div class="our-company-first-content">
+                        <a [routerLink]="routes.contactUs" class="me-2">
+                            <i class="ti ti-device-mobile-filled"></i>
+                        </a>
+                        <div class="company-top-content">
+                            <p>Call us Today!</p>
+                            <h3 class="text-dark">+012 345678</h3>
+                        </div>
+                        
+                    </div>
+                    <div class="our-company-two-content">
+                        <div class="company-two-top-content">
+                            <img src="assets/img/icons/trophy-svgrepo-com.svg" alt="image" class="me-2">
+                            <h4 class="text-dark">12+</h4>
+                            
+                        </div>
+                        <p>Years Experience</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /About Our Company -->
+
+<!-- Get Satisfied with the services Explore All -->
+<section class="satisfied-service-section">
+    <div class="container">
+        <div class="section-heading section-heading-six">
+            <div class="row align-items-end">
+                <div class="col-md-9 aos" data-aos="fade-up">
+                    <div class="reason-six">
+                        <img src="assets/img/icons/cleaning-mop.svg" alt="image" class="rounded-circle">
+                        <p>AFFORDABLE & RELIABLE</p>
+                    </div>
+                    <h2>Get Satisfied with the <span>services</span></h2>
+                </div>
+                <div class="col-md-3 aos" data-aos="fade-up">
+                    <a [routerLink]="routes.serviceDetails" class="afford-btn">Explore All</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="get-service-main w-100">
+                    <span>
+                        <img src="assets/img/icons/sofa.svg" alt="image">
+                    </span>
+                    <a [routerLink]="routes.serviceDetails">
+                        <h5>Upholstery Cleaning</h5>
+                    </a>
+                    <div class="get-service-btn">
+                        <a [routerLink]="routes.serviceDetails">
+                            View More <i class="ms-2 feather icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="get-service-main w-100">
+                    <span>
+                        <img src="assets/img/icons/apporment-cleaning.svg" alt="image">
+                    </span>
+                    <a [routerLink]="routes.serviceDetails">
+                        <h5>Apartment Cleaning</h5>
+                    </a>
+                    <div class="get-service-btn">
+                        <a [routerLink]="routes.serviceDetails">
+                            View More <i class="ms-2 feather icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="get-service-main w-100">
+                    <span>
+                        <img src="assets/img/icons/covid-cleaning.svg" alt="image">
+                    </span>
+                    <a [routerLink]="routes.serviceDetails">
+                        <h5>Covid Clean-Up</h5>
+                    </a>
+                    <div class="get-service-btn">
+                        <a [routerLink]="routes.serviceDetails">
+                            View More <i class="ms-2 feather icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="get-service-main w-100">
+                    <span>
+                        <img src="assets/img/icons/office-cleaning.svg" alt="image">
+                    </span>
+                    <a [routerLink]="routes.serviceDetails">
+                        <h5>Office Cleaning</h5>
+                    </a>
+                    <div class="get-service-btn">
+                        <a [routerLink]="routes.serviceDetails">
+                            View More <i class="ms-2 feather icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="get-service-main w-100">
+                    <span>
+                        <img src="assets/img/icons/move-in.svg" alt="image">
+                    </span>
+                    <a [routerLink]="routes.serviceDetails">
+                        <h5>Move In/ Out Cleaning</h5>
+                    </a>
+                    <div class="get-service-btn">
+                        <a [routerLink]="routes.serviceDetails">
+                            View More <i class="ms-2 feather icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="get-service-main w-100">
+                    <span>
+                        <img src="assets/img/icons/commercial-cleaning.svg" alt="image">
+                    </span>
+                    <a [routerLink]="routes.serviceDetails">
+                        <h5>Commercial Cleaning</h5>
+                    </a>
+                    <div class="get-service-btn">
+                        <a [routerLink]="routes.serviceDetails">
+                            View More <i class="ms-2 feather icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="get-service-main w-100">
+                    <span>
+                        <img src="assets/img/icons/window-cleaning.svg" alt="image">
+                    </span>
+                    <a [routerLink]="routes.serviceDetails">
+                        <h5>Window Cleaning</h5>
+                    </a>
+                    <div class="get-service-btn">
+                        <a [routerLink]="routes.serviceDetails">
+                            View More <i class="ms-2 feather icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12 d-flex">
+                <div class="get-service-main w-100">
+                    <span>
+                        <img src="assets/img/icons/carpet-cleaning.svg" alt="image">
+                    </span>
+                    <a [routerLink]="routes.serviceDetails">
+                        <h5>Carpet Cleaning</h5>
+                    </a>
+                    <div class="get-service-btn">
+                        <a [routerLink]="routes.serviceDetails">
+                            View More <i class="ms-2 feather icon-chevron-right"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+<!-- /Get Satisfied with the services Explore All -->
+
+<!-- See How It Works -->
+<section class="see-works-six-section">
+    <div class="container">
+        <div class="section-heading section-heading-six">
+            <div class="row">
+                <div class="col-md-6 aos" data-aos="fade-up">
+                    <div class="reason-six">
+                        <img src="assets/img/icons/cleaner-clean-svgrepo-com.svg" alt="image" class="rounded-circle">
+                        <p>HOW WE ARE WORKING?</p>
+                    </div>
+                    <h2>See How It <span>Works</span></h2>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="how-it-works-six">
+                    <div class="works-six-num">
+                        <h2>01</h2>
+                    </div>
+                    <div class="work-online-schedule">
+                        <div class="work-online-img">
+                            <img src="assets/img/works-six-1.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-online-bottom">
+                            <img src="assets/img/icons/gui-calendar-planner.svg" alt="">
+                            <h4>Easy Online Scheduling</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="how-it-works-six">
+                    <div class="works-six-num works-six-num-two">
+                        <h2>02</h2>
+                    </div>
+                    <div class="work-online-schedule">
+                        <div class="work-online-img">
+                            <img src="assets/img/works-six-2.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-online-bottom work-online-bottom-two">
+                            <h4>Get A Certified Cleaner</h4>
+                            <img src="assets/img/icons/carpet.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="how-it-works-six">
+                    <div class="works-six-num works-six-num-three">
+                        <h2>03</h2>
+                    </div>
+                    <div class="work-online-schedule">
+                        <div class="work-online-img">
+                            <img src="assets/img/works-six-3.png" alt="" class="img-fluid">
+                        </div>
+                        <div class="work-online-bottom">
+                            <img src="assets/img/icons/like-svg.svg" alt="">
+                            <h4>Enjoy Cleanliness!</h4>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /See How It Works -->
+
+<!-- Latest Blog -->
+<section class="blogs-service-section bg-white">
+    <div class="container">
+        <div class="section-heading section-heading-six">
+            <div class="row align-items-end">
+                <div class="col-md-9 aos" data-aos="fade-up">
+                    <div class="reason-six">
+                        <img src="assets/img/icons/cleaning-mop.svg" alt="image" class="rounded-circle">
+                        <p>AFFORDABLE & RELIABLE</p>
+                    </div>
+                    <h2>Latest <span>Blog</span></h2>
+                </div>
+                <div class="col-md-3 aos" data-aos="fade-up">
+                    <a [routerLink]="routes.blogDetails" class="afford-btn">Explore All</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12 d-flex">
+                <div class="service-widget service-six flex-fill aos" data-aos="fade-up">
+                    <div class="service-img">
+                        <a [routerLink]="routes.blogDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                src="assets/img/blog/celaning-blog-01.jpg">
+                        </a>
+                    </div>
+                    <div class="service-content service-content-six">
+                        <h5 class="blog-import-service">How to effectively evaluate offers from commercial cleaning companies</h5>
+                        <p>In today’s fast-paced business world, finding the right services to support your growth can be a game...</p>
+                        <a href="#">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 d-flex">
+                <div class="service-widget service-six flex-fill aos" data-aos="fade-up">
+                    <div class="service-img">
+                        <a [routerLink]="routes.blogDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                src="assets/img/blog/celaning-blog-02.jpg">
+                        </a>
+                    </div>
+                    <div class="service-content service-content-six">
+                        <h5 class="blog-import-service">Commercial Moving Solutions By Three Movers</h5>
+                        <p>One of the biggest advantages of using a service marketplace is the access to a wide range of services.</p>
+                        <a [routerLink]="routes.blogDetails">Read More</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 d-flex">
+                <div class="service-widget service-six flex-fill aos" data-aos="fade-up">
+                    <div class="service-img">
+                        <a [routerLink]="routes.blogDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                src="assets/img/blog/celaning-blog-03.jpg">
+                        </a>
+                    </div>
+                    <div class="service-content service-content-six">
+                        <h5 class="blog-import-service">Importance Of Professional Cleaning Services</h5>
+                        <p>Before hiring a service provider, check their reviews and ratings on the marketplace...</p>
+                        <a [routerLink]="routes.blogDetails">Read More</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Latest Blog -->
+
+<!-- serve you the best cleaning service! -->
+<section class="our-expert-six-section">
+    <div class="container">
+        <div class="section-heading section-heading-six">
+            <div class="row align-items-end">
+                <div class="col-md-9 aos" data-aos="fade-up">
+                    <div class="reason-six">
+                        <img src="assets/img/icons/window-cleaner-detergent-svgrepo-com.svg" alt="image" class="rounded-circle">
+                        <p>SERVE YOU THE BEST CLEANING SERVICE</p>
+                    </div>
+                    <h2>Our Expert <span>Team</span></h2>
+                </div>
+                <div class="col-md-3 aos" data-aos="fade-up">
+                    <a [routerLink]="routes.providersList" class="afford-btn">Explore All</a>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="our-expert-six">
+                    <div class="our-expert-img">
+                        <img src="assets/img/services/service-88.jpg" alt="image" class="img-fluid">
+                    </div>
+                    <div class="our-expert-six-content">
+                        <h6>William James</h6>
+                        <p>Head In Industrial Cleaning</p>
+                        <a class="btn btn-primary rounded" href="#">$30.00<span>/hr</span></a>
+                    
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="our-expert-six">
+                    <div class="our-expert-img">
+                        <img src="assets/img/services/service-89.jpg" alt="image" class="img-fluid">
+                    </div>
+                    <div class="our-expert-six-content">
+                        <h6>William James</h6>
+                        <p>Head In Industrial Cleaning</p>
+                        
+                        <a class="btn btn-primary rounded" href="#">$30.00<span>/hr</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="our-expert-six">
+                    <div class="our-expert-img">
+                        <img src="assets/img/services/service-90.jpg" alt="image" class="img-fluid">
+                    </div>
+                    <div class="our-expert-six-content">
+                        <h6>William James</h6>
+                        <p>Head In Industrial Cleaning</p>
+                        <a class="btn btn-primary rounded" href="#">$30.00<span>/hr</span></a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                <div class="our-expert-six">
+                    <div class="our-expert-img">
+                        <img src="assets/img/services/service-91.jpg" alt="image" class="img-fluid">
+                    </div>
+                    <div class="our-expert-six-content">
+                        <h6>William James</h6>
+                        <p>Head In Industrial Cleaning</p>
+                        <a class="btn btn-primary rounded" href="#">$30.00<span>/hr</span></a>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /serve you the best cleaning service! -->
+
+
+<!-- Customer Reviews -->
+<section class="customer-reviews-six-section">
+    <div class="container">
+        <div class="section-heading section-heading-six">
+            <div class="row align-items-end">
+                <div class="col-md-6 aos" data-aos="fade-up">
+                    <div class="reason-six">
+                        <img src="assets/img/icons/cleaning-mop.svg" alt="">
+                        <p>AFFORDABLE & RELIABLE</p>
+                    </div>
+                    <h2>Customer <span>Reviews</span></h2>
+                </div>
+                <div class="col-md-6 aos" data-aos="fade-up">
+                    <a [routerLink]="routes.categories" class="afford-btn">Explore All</a>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="customer-review-main-six">
+                    <div class="customer-review-top">
+                        <img src="assets/img/profiles/avatar-20.jpg" alt="">
+                        <h5>Maria Williams</h5>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered.</p>
+                    </div>
+                    <div class="customer-review-bottom">
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="customer-review-quote">
+                        <img src="assets/img/icons/reviews-quote.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="customer-review-main-six">
+                    <div class="customer-review-top">
+                        <img src="assets/img/profiles/avatar-18.jpg" alt="">
+                        <h5>Bella Williams</h5>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered.</p>
+                    </div>
+                    <div class="customer-review-bottom">
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="customer-review-quote">
+                        <img src="assets/img/icons/reviews-quote.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12">
+                <div class="customer-review-main-six">
+                    <div class="customer-review-top">
+                        <img src="assets/img/profiles/avatar-11.jpg" alt="">
+                        <h5>Cristina Williams</h5>
+                        <p>There are many variations of passages of Lorem Ipsum available, but the majority have
+                            suffered.</p>
+                    </div>
+                    <div class="customer-review-bottom">
+                        <div class="rating">
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star filled"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="customer-review-quote">
+                        <img src="assets/img/icons/reviews-quote.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Customer Reviews -->
+
+	<!-- See How It Works -->
+    <section class="hidden-charge-section">
+        <div class="container">
+            <div class="section-heading section-heading-six">
+                <div class="row justify-content-center text-center">
+                    <div class="col-md-9 aos" data-aos="fade-up">
+                        <div class="reason-six justify-content-center">
+                            <img src="assets/img/icons/vacuum-cleaner.svg" alt="image" class="rounded-circle">
+                            <p>NO EXTRA HIDDEN CHARGES!</p>
+                        </div>
+                        <h2>Choose Your <span>Plan</span></h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-center">
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="hidden-charge-main">
+                        <div class="hidden-charge-img">
+                            <img src="assets/img/icons/charges-3.svg" alt="image">
+                        </div>
+                        <h4>Standard</h4>
+                        <ul>
+                            <li>Ability to list up to 3 services</li>
+                            <li>Access to buyer inquiries</li>
+                            <li>Basic customer support</li>
+                            <li>5% transaction fee on sales</li>
+                            <li>Experienced & Trained Cleaner</li>
+                        </ul>
+                        <div class="hidden-charges-bottom-mark">
+                            <h1>$15 <span>/hr</span></h1>
+                            <h6>PER MONTH</h6>
+                        </div>
+                        <a href="#" class="btn btn-dark btn-charges w-100">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="hidden-charge-main hidden-charge-main-two">
+                        <div class="hidden-charge-img">
+                            <img src="assets/img/icons/charges-2.svg" alt="image">
+                        </div>
+                        <h4>Premium</h4>
+                        <ul>
+                            <li>Ability to list up to 10 services</li>
+                            <li>Priority customer support</li>
+                            <li>Insured Liability ans Cleaning</li>
+                            <li>You choose leaning Day</li>
+                            
+                        </ul>
+                        <div class="hidden-charges-bottom-mark">
+                            <h1>$29 <span>/hr</span></h1>
+                            <h6>PER MONTH</h6>
+                        </div>
+                        <a href="#" class="btn btn-primary btn-charges btn-plan w-100">Book Now</a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 col-12">
+                    <div class="hidden-charge-main">
+                        <div class="hidden-charge-img">
+                            <img src="assets/img/icons/charges-1.svg" alt="image">
+                        </div>
+                        <h4>Enterprise</h4>
+                        <ul>
+                            <li>Experienced & Trained Cleaner</li>
+                            <li>Maintenance Cleaning</li>
+                            <li>Insured Liability ans Cleaning</li>
+                            <li>Planed Holiday Cover</li>
+                        </ul>
+                        <div class="hidden-charges-bottom-mark">
+                            <h1>$59 <span>/hr</span></h1>
+                            <h6>PER MONTH</h6>
+                        </div>
+                        <a href="#" class="btn btn-dark btn-charges w-100">Book Now</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+<!-- App Section -->
+<section class="app-six-section">
+    <div class="container">
+        <div class="app-sec app-sec-six">
+            <div class="app-sec-main">
+                <div class="app-imgs-six-bg">
+                    <img src="assets/img/new-app-six-bg.png" alt="">
+                </div>
+                <div class="row align-items-center">
+                    <div class="col-lg-6 col-12">
+                        <div class="appimg-six aos" data-aos="fade-up">
+                            <img src="assets/img/new-app-img.png" class="img-fluid" alt="img">
+                            <div class="app-img-sec">
+                                <img src="assets/img/new-app-sec-ng.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="new-app-six-middle">
+                            <div class="heading aos" data-aos="fade-up">
+                                <h2>Download <span>Our New App</span></h2>
+                                <p>Aliquam lorem ante, dapibus in, viverra quis, feugiat Phasellus viverra nulla
+                                    ut metus varius laoreet.Aliquam lorem ante.</p>
+                            </div>
+                            <div class="new-app-six-bottom aos" data-aos="fade-up">
+                                <div class="new-app-six-content">
+                                    <a href="javascript:void(0);"><img src="assets/img/icons/googleplay-six.svg"
+                                            class="img-fluid new-six-img" alt="img"></a>
+                                    <a href="javascript:void(0);"><img src="assets/img/icons/appstore-six.svg" class="img-fluid"
+                                            alt="img"></a>
+                                </div>
+                                <a href="javascript:void(0);" [routerLink]="routes.homeSix">
+                                    <img src="assets/img/icons/scan-six.svg" class="img-fluid" alt="img">
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /App Section -->
+ 
+    <!-- scrollToTop start -->
+    <!-- <div
+      (click)="scrollToTop()" (keydown.enter)="scrollToTop()" tabindex="0"
+      class="progress-wrap"
+      [class.active-progress]="strokeValue < progress"
+    >
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="transition: stroke-dashoffset 10ms linear 0s"
+          attr.stroke-dasharray="{{ progress + 'px' + ',' + progress + 'px' }}"
+          attr.stroke-dashoffset="{{ strokeValue + 'px' }}"
+        ></path>
+      </svg>
+    </div> -->
+    <!-- scrollToTop end -->
+
+<!-- Modal -->
+<div class="modal fade modal-content-video" id="video" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">
+                        <i class="fa fa-times" aria-hidden="true"></i>
+                    </span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="video-home">
+                    <video controls id="promovideo">
+                        <iframe src="https://www.youtube.com/embed/ExJZAegsOis"></iframe>
+                    </video>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<app-home-six-footer></app-home-six-footer>

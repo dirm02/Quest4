@@ -1,0 +1,766 @@
+
+<app-home-ten-header></app-home-ten-header>
+<!-- Hero Section -->
+<section class="hero-section-seven">
+    <div class="hero-sectionseven-top pt-5 pt-lg-0 pb-5 pb-lg-0">
+        <div class="container">
+            <div class="home-banner homer-banner-seven">
+                <div class="row align-items-center w-100">
+                    <div class="col-lg-6 col-12">
+                        <div class="section-search aos" data-aos="fade-up">
+                            <h5>Search From 150 Awesome Verified Ads!</h5>
+                            <h1>Best Solution for Every
+                                <span>House Problems</span>
+                            </h1>
+                            <div class="solution-seven">
+                                <h6>2M+ Professionals registered</h6>
+                                <ul class="total-client-avatar total-client-avatar-seven d-flex align-items-center mt-2">
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/profiles/avatar-06.jpg" alt="User">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/profiles/avatar-07.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/profiles/avatar-08.jpg" alt="image">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/profiles/avatar-09.jpg" alt="User">
+                                        </a>
+                                    </li>
+                                    <li>
+                                        <a href="#">
+                                            <img src="assets/img/profiles/avatar-10.jpg" alt="User">
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 col-12">
+                        <div class="hero-banner-ryt">
+                            <img src="assets/img/hero-section-seven-ryt.png" alt="image" class="img-fluid">
+                            <div class="hero-banner-ryt-content">
+                                <div class="hero-banner-ryt-top">
+                                    <h5>+21 k</h5>
+                                    <p>Services Completed</p>
+                                </div>
+                                <span>
+                                    <img src="assets/img/icons/suitcase.svg" alt="image">
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Hero Section -->
+
+<!-- Service Section -->
+<section class="service-section-seven">
+<div class="search-box-two search-box-seven">
+    <form action="/">
+        <div class="search-input-new line">
+            <i class="fas fa-tv bficon"></i>
+            <div class="form-group mb-0">
+                <input type="text" class="form-control" placeholder="What are you looking for?">
+            </div>
+        </div>
+        <div class="search-input-new">
+            <i class="fas fa-location-arrow bficon"></i>
+            <div class="form-group mb-0">
+                <input type="text" class="form-control" placeholder="Your Location">
+                <a class="current-loc-icon current_location" href="javascript:void(0);"> </a>
+            </div>
+        </div>
+        <div class="search-btn">
+            <button class="btn search_service" type="submit"><i class="feather icon-search"></i> Search</button>
+        </div>
+    </form>
+</div>
+<div class="popularsearch-top">
+    <h6>Popular Searches</h6>
+    <ul>
+        <li><a [routerLink]="routes.search">Electrical Works</a></li>
+        <li><a [routerLink]="routes.search">Cleaning</a></li>
+        <li><a [routerLink]="routes.search">AC Repair</a></li>
+    </ul>
+</div>
+</section>
+
+<section class="service-section-seven">
+    <div class="container">
+        <div class="section-heading section-heading-seven">
+            <div class="row">
+                <div class="col-md-6 aos" data-aos="fade-up">
+                    <h2>Featured Categories</h2>
+                    <p>What do you need to find?</p>
+                </div>
+                <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                    <div class="owl-nav mynav mynav-seven"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="categories-slider-seven">
+                    <owl-carousel-o [options]="featuredCategoriesOwl">
+                        <ng-container *ngFor="let data of featuredCategories">
+                            <ng-template carouselSlide>
+                                <a [routerLink]="routes.serviceDetails" class="feature-box feature-box-seven aos"
+                                    data-aos="fade-up">
+                                    <div class="feature-icon feature-icon-seven">
+                                        <span>
+                                            <img [src]="data.img1" alt="img" class="img-fluid">
+                                        </span>
+                                    </div>
+                                    <h5>{{data.title}}</h5>
+                                    
+                                </a>
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Service Section -->
+
+<!-- popular service -->
+<section class="popular-service-seven-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading section-heading-seven aos" data-aos="fade-up">
+                    <h2>Most Popular Services</h2>
+                    <p>What do you need to find?</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="popular-service-seven">
+                    <owl-carousel-o [options]="popularServiceOwl">
+                        <ng-container *ngFor="let data of popularService">
+                            <ng-template carouselSlide>
+                                <div class="service-widget service-two service-seven aos" data-aos="fade-up">
+                                    <div class="service-img">
+                                        <a [routerLink]="routes.serviceDetails">
+                                            <img class="img-fluid serv-img" alt="Service Image" [src]="data.img1">
+                                        </a>
+                                        <div class="fav-item">
+                                            <a [routerLink]="routes.categories"><span class="item-cat">{{data.title}}</span></a>
+                                            <a href="javascript:void(0)" class="fav-icon" (click)="data.like = !data.like" [ngClass]="{'selected' : data.like === true}">
+                                                <i class="feather icon-heart"></i>
+                                            </a>
+                                        </div>
+                                        <div class="item-info">
+                                            <a [routerLink]="routes.providersList"><span class="item-img"><img [src]="data.img2"
+                                                        class="avatar" alt="">{{data.name}}</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="service-content service-content-seven">
+                                        <h3 class="title">
+                                            <a [routerLink]="routes.serviceDetails">{{data.content}}</a>
+                                        </h3>
+                                        <p><span class="rate"><i class="feather icon-phone"></i>{{data.num}}</span><i
+                                                class="feather icon-map-pin"></i>{{data.country}}</p>
+                                        <div class="serv-info">
+                                            <div class="rating">
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <span>{{data.rating}}</span>
+                                            </div>
+                                            <h6>{{data.price}}</h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /popular service -->
+
+
+<!-- Work Section -->
+<section class="work-section-seven">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading section-heading-seven aos" data-aos="fade-up">
+                    <h2>How It Works</h2>
+                    <p>Aliquam lorem ante, dapibus in, viverra quis</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="work-box-seven aos" data-aos="fade-up">
+                    <div class="work-icon-seven">
+                       
+                        <span>
+                            <img src="assets/img/icons/work-seven-3.svg" alt="img">
+                        </span>
+                    </div>
+                    <h5 class="mb-2">Choose What To Do</h5>
+                    <p>Customers can browse or search for specific 
+                        products or services using categories, filters, or search bars.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-box-seven aos" data-aos="fade-up">
+                    <div class="work-icon-seven">
+                       
+                        <span>
+                            <img src="assets/img/icons/work-seven-2.svg" alt="img">
+                        </span>
+                    </div>
+                    <h5>Find What You Want</h5>
+                    <p>
+                        Customers  can add items to their shopping cart. For services, 
+                        they may select a service and proceed to book.
+                    </p>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="work-box-seven aos" data-aos="fade-up">
+                    <div class="work-icon-seven">
+                       
+                        <span>
+                            <img src="assets/img/icons/work-seven-1.svg" alt="img">
+                        </span>
+                    </div>
+                    <h5>Amazing Places</h5>
+                    <p>
+                        The Customer fulfills the order by either providing the 
+                        service  to the Customers & Get leads from the local Persons
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Work Section -->
+
+
+<!-- popular service -->
+<section class="popular-service-seven-section">
+    <div class="container">
+        <div class="section-heading section-heading-seven">
+            <div class="row">
+                <div class="col-md-6 aos" data-aos="fade-up">
+                    <h2>Featured Categories</h2>
+                    <p>What do you need to find?</p>
+                </div>
+                <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                    <div class="owl-nav mynav-seven-two"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class="recent-projects-seven">
+                    <owl-carousel-o [options]="featuredCategoryOwl">
+                        <ng-container *ngFor="let data of featuredCategory">
+                            <ng-template carouselSlide>
+                                <div class="service-widget service-two service-seven aos" data-aos="fade-up">
+                                    <div class="service-img">
+                                        <a [routerLink]="routes.serviceDetails">
+                                            <img class="img-fluid serv-img" alt="Service Image" [src]="data.img1">
+                                        </a>
+                                        <div class="fav-item">
+                                            <a [routerLink]="routes.categories"><span class="item-cat">{{data.title}}</span></a>
+                                            <a href="javascript:void(0)" class="fav-icon" (click)="data.like = !data.like" [ngClass]="{'selected' : data.like === true}">
+                                                <i class="feather icon-heart"></i>
+                                            </a>
+                                        </div>
+                                        <div class="item-info">
+                                            <a href="javascript:void(0);"><span class="item-img"><img [src]="data.img2"
+                                                        class="avatar" alt=""> {{data.name}}</span></a>
+                                        </div>
+                                    </div>
+                                    <div class="service-content service-content-seven">
+                                        <h3 class="title">
+                                            <a [routerLink]="routes.serviceDetails">{{data.content}}</a>
+                                        </h3>
+                                        <p><span class="rate"><i class="feather icon-phone"></i>{{data.num}}</span><i
+                                                class="feather icon-map-pin"></i>{{data.country}}</p>
+                                        <div class="serv-info">
+                                            <div class="rating">
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <span>(234)</span>
+                                            </div>
+                                            <h6>{{data.price1}}<span class="old-price">{{data.price2}}</span></h6>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                        </ng-container>
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /popular service -->
+
+
+<!-- Providers Section -->
+<section class="List-section-seven providers-section-seven">
+    <div class="container">
+        <div class="section-heading section-heading-seven">
+            <div class="row">
+                <div class="col-md-6 aos" data-aos="fade-up">
+                    <h2>Top Providers</h2>
+                    <p>What do you need to find?</p>
+                </div>
+                <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                    <div class="owl-nav mynav-seven-three"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row  aos" data-aos="fade-up">
+            <div class="col-md-12">
+                <div class="top-projects-seven">
+                    <owl-carousel-o [options]="topProviderOwl">
+                        <ng-container *ngFor="let data of topProvider">
+                          <ng-template carouselSlide>
+                    <div class="providerset">
+                        <div class="providerset-img providerset-img-seven ">
+                            <a [routerLink]="routes.providerDetails">
+                                <img [src]="data.img1" alt="img">
+                            </a>
+                            <div class="fav-item d-flex align-items-center justify-content-between">
+                                <i class="fa fa-check-circle fav-icons" aria-hidden="true"></i>
+                                <a href="javascript:void(0)" class="fav-icon" (click)="data.like = !data.like" [ngClass]="{'selected' : data.like === true}">
+                                    <i class="feather icon-heart"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="providerset-content providerset-content-seven">
+                            <div class="providerset-price">
+                                <div class="providerset-name">
+                                    <h4><a [routerLink]="routes.providerDetails">{{data.name}}</a></h4>
+                                    <span class="text-primary">{{data.title}}</span>
+                                </div>
+                                <div class="rate">
+                                    <i class="fas fa-star filled"></i><span>{{data.rate}}</span>
+                                </div>
+                            </div>
+                            <div class="provider-rating-seven">
+                                <div class="providerset-prices">
+                                    <h6>{{data.price}}<span>/hr</span></h6>
+                                </div>
+                                <a [routerLink]="routes.providerDetails" class="btn btn-primary">View Details</a>
+                            </div>
+                        </div>
+                    </div>
+                </ng-template>
+            </ng-container>
+            </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- Providers Section -->
+
+<!-- pricing Section -->
+<section class="price-sections-seven">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading section-heading-seven aos" data-aos="fade-up">
+                    <h2>Pricing Plan</h2>
+                    <p>Designed to effectively communicate your service offerings and their associated costs</p>
+                </div>
+            </div>
+        </div>
+        <div class="price-toggle price-toggle-seven text-center mb-0">
+            <div class="status-toggle toggle-pink d-inline-flex align-items-center">
+                Bill Monthly
+                <input type="checkbox" id="status_1" class="check">
+                <label for="status_1" class="checktoggle mx-3">checkbox</label>
+                Bill Annualy
+            </div>
+        </div>
+        <div class="row aos" data-aos="fade-up">
+            <div class="col-lg-4 col-sm-12">
+                <div class="pricing-plans price-new pricing-plans-seven">
+                    <div class="pricing-plans-img">
+                        <img src="assets/img/icons/pricing-seven-3.svg" alt="image">
+                    </div>
+                    <div class="pricing-planshead">
+                        <h5>Basic</h5>
+                        <h6><span>$</span>10.00</h6>
+                    </div>
+                    <div class="pricing-planscontent pricing-planscontent-seven">
+                        <ul>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>1 Bathroom cleaning</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Up to 3 bedrooms cleaning</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Full Furnished Room Cleaning</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Additional 05 Rooms</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Small kitchen (0 - 150 ft2)</span>
+                            </li>
+                        </ul>
+                        <div class="pricing-btn">
+                            <a [routerLink]="routes.search" class="btn btn-view w-100">Choose Plan</a>
+                        </div>
+                        <div class="price-bg">
+                            <img src="assets/img/bg/price-bg-vector.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="pricing-plans price-new pricing-plans-seven active-seven">
+                    <div class="price-block">
+                        <span class="popular">MOST POPULAR</span>
+                    </div>
+                    <div class="pricing-plans-img">
+                        <img src="assets/img/icons/pricing-seven-2.svg" alt="image">
+                    </div>
+                    <div class="pricing-planshead">
+                        <h5>Standard </h5>
+                        <h6><span>$</span>90.99</h6>
+                    </div>
+                    <div class="pricing-planscontent pricing-planscontent-seven">
+                        <ul>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>1 Bathroom cleaning</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Up to 3 bedrooms cleaning</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Full Furnished Room Cleaning</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Additional 05 Rooms</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Small kitchen (0 - 150 ft2)
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="pricing-btn">
+                            <a [routerLink]="routes.search" class="btn btn-view w-100">Choose Plan</a>
+                        </div>
+                        <div class="price-bg">
+                            <img src="assets/img/bg/price-bg-vector.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-sm-12">
+                <div class="pricing-plans price-new pricing-plans-seven">
+                    <div class="pricing-plans-img">
+                        <img src="assets/img/icons/pricing-seven-1.svg" alt="image">
+                    </div>
+                    <div class="pricing-planshead">
+                        <h5>Basic</h5>
+                        <h6><span>$</span>150.99</h6>
+                    </div>
+                    <div class="pricing-planscontent pricing-planscontent-seven">
+                        <ul>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Upto 5 Bathroom Cleaning</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Upto 10 bedrooms Cleaning
+                                </span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Full Furnished Rooms 15 sqft Cleaning</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Additional 16 Rooms</span>
+                            </li>
+                            <li>
+                                <i class="fa fa-check me-2"></i>
+                                <span>Small kitchen (0 - 150 ft2)
+                                </span>
+                            </li>
+                        </ul>
+                        <div class="pricing-btn">
+                            <a [routerLink]="routes.search" class="btn btn-view w-100">Choose Plan</a>
+                        </div>
+                        <div class="price-bg">
+                            <img src="assets/img/bg/price-bg-vector.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /pricing Section -->
+
+
+
+<!-- Testimonials Section -->
+<section class="testimonals-seven-section pt-0">
+    <div class="container">
+        <div class="section-heading section-heading-seven">
+            <div class="row">
+                <div class="col-md-6 aos" data-aos="fade-up">
+                    <h2>Testimonials</h2>
+                    <p>Description highlights the value of client feedback, showcases real testimonials</p>
+                </div>
+                <div class="col-md-6 text-md-end aos" data-aos="fade-up">
+                    <div class="owl-nav mynav-test"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center">
+            <div class="col-lg-6 col-12">
+                <div class="testimonals-top-seven">
+                    <img src="assets/img/testimonials-seven.png" alt="">
+                </div>
+            </div>
+            <div class="col-lg-6 col-12">
+                <div class="testimonals-seven-slider">
+                    <owl-carousel-o [options]="testimonialProviderOwl">
+                        <ng-container *ngFor="let data of testimonialProvider">
+                          <ng-template carouselSlide>
+                    <div class="testimonials-main-ryt">
+                        <div class="testimonials-content-seven">
+                            <div class="testimonials-seven-img">
+                                <img [src]="data.img" alt="">
+                                <div class="testimonials-img-content">
+                                    <h6>{{data.name}}</h6>
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <img src="assets/img/icons/test-quote.svg" alt="" class="img-fluid">
+                        </div>
+                        <p>{{data.para}}</p>
+                    </div>
+                </ng-template>
+            </ng-container>
+            </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Testimonials Section -->
+
+<!-- pricing Section -->
+<section class="price-sections-seven">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading section-heading-seven aos" data-aos="fade-up">
+                    <h2>Our Recent Blog</h2>
+                    <p>Here’s a compelling blog description designed to attract readers and provide a clear idea of what they can expect from your blog:</p>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12">
+                <div class=" our-recent-blog">
+                    <owl-carousel-o [options]="blogDataOwl">
+                       
+                          <ng-template carouselSlide>
+                            <div class="blog blog-new flex-fill aos" data-aos="fade-up">
+								<div class="blog-image">
+									<a [routerLink]="routes.blogDetails"><img class="img-fluid" src="assets/img/blog/house-blog-03.jpg" alt="Post Image"></a>
+									<div class="date">
+										25<span>Dec</span>
+									</div>
+									<ul class="blog-item">
+										<li>
+											<div class="post-author">
+												<a href="#"><i class="feather icon-user"></i><span>Hal Lewis</span></a>
+											</div>
+										</li>
+										<li><i class="feather icon-message-square"></i>Comments (5)</li>
+									</ul>
+								</div>
+								<div class="blog-content mb-0">
+									<h3 class="blog-title">
+										<a [routerLink]="routes.blogDetails">Take Advantage of Trial Periods or Consultations</a>
+									</h3>
+									<p>In today’s fast-paced business world, finding the right services to support your growth can be a game...</p>
+								</div>
+							</div>	
+                        </ng-template>
+                        <ng-template carouselSlide>
+                        <div class="blog blog-new flex-fill  aos" data-aos="fade-up">
+                            <div class="blog-image">
+                                <a [routerLink]="routes.blogDetails"><img class="img-fluid" src="assets/img/blog/house-blog-01.jpg" alt="Post Image"></a>
+                                <div class="date">
+                                    25<span>Dec</span>
+                                </div>
+                                <ul class="blog-item">
+                                    <li>
+                                        <div class="post-author">
+                                            <a href="#"><i class="feather icon-user"></i><span>JohnDoe</span></a>
+                                        </div>
+                                    </li>
+                                    <li><i class="feather icon-message-square"></i>Comments (5)</li>
+                                </ul>
+                            </div>
+                            <div class="blog-content mb-0">
+                                <h3 class="blog-title">
+                                    <a [routerLink]="routes.blogDetails">Maximize Your Business Potential with the Right Service</a>
+                                </h3>
+                                <p>One of the biggest advantages of using a service marketplace is the access to a wide range of services.</p>
+                            </div>
+                        </div>
+                        </ng-template>
+                        <ng-template carouselSlide>	
+                        <div class="blog blog-new flex-fill aos" data-aos="fade-up">
+                            <div class="blog-image">
+                                <a [routerLink]="routes.blogDetails"><img class="img-fluid" src="assets/img/blog/house-blog-02.jpg" alt="Post Image"></a>
+                                <div class="date">
+                                    25<span>Dec</span>
+                                </div>
+                                <ul class="blog-item">
+                                    <li>
+                                        <div class="post-author">
+                                            <a href="#"><i class="feather icon-user"></i><span>Greg Avery</span></a>
+                                        </div>
+                                    </li>
+                                    <li><i class="feather icon-message-square"></i>Comments (5)</li>
+                                </ul>
+                            </div>
+                            <div class="blog-content mb-0">
+                                <h3 class="blog-title">
+                                    <a [routerLink]="routes.blogDetails">Specific features and benefits of your service marketplace.</a>
+                                </h3>
+                                <p>Before hiring a service provider, check their reviews and ratings on the marketplace...</p>
+                            </div>
+                        </div>	
+                        </ng-template>
+                        <ng-template carouselSlide>
+                        <div class="blog blog-new flex-fill  aos" data-aos="fade-up">
+                            <div class="blog-image">
+                                <a [routerLink]="routes.blogDetails"><img class="img-fluid" src="assets/img/blog/house-blog-03.jpg" alt="Post Image"></a>
+                                <div class="date">
+                                    25<span>Dec</span>
+                                </div>
+                                <ul class="blog-item">
+                                    <li>
+                                        <div class="post-author">
+                                            <a href="#"><i class="feather icon-user"></i><span>JohnDoe</span></a>
+                                        </div>
+                                    </li>
+                                    <li><i class="feather icon-message-square"></i>Comments (5)</li>
+                                </ul>
+                            </div>
+                            <div class="blog-content mb-0">
+                                <h3 class="blog-title">
+                                    <a [routerLink]="routes.blogDetails">Maximize Your Business Potential with the Right Service</a>
+                                </h3>
+                                <p>One of the biggest advantages of using a service marketplace is the access to a wide range of services.</p>
+                            </div>
+                        </div>
+                        </ng-template>
+                    
+                    </owl-carousel-o>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /pricing Section -->
+
+<!-- Partners Section -->
+<section class="our-partners-seven">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12 text-center">
+                <div class="section-heading section-heading-seven aos" data-aos="fade-up">
+                    <h2>Our Partners</h2>
+                    <p>Discover how our marketplace can support your business growth.</p>
+                </div>
+            </div>
+            <owl-carousel-o [options]="partnersOwl">
+                <ng-container *ngFor="let data of partners">
+                    <ng-template carouselSlide>
+            <div class="partner-img">
+                <img [src]="data.img" alt="img">
+            </div>
+           </ng-template>
+           </ng-container>
+           </owl-carousel-o>
+        </div>
+    </div>
+</section>
+<!-- Partners Section -->
+    <!-- scrollToTop start -->
+    <!-- <div
+      (click)="scrollToTop()" (keydown.enter)="scrollToTop()" tabindex="0"
+      class="progress-wrap"
+      [class.active-progress]="strokeValue < progress"
+    >
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="transition: stroke-dashoffset 10ms linear 0s"
+          attr.stroke-dasharray="{{ progress + 'px' + ',' + progress + 'px' }}"
+          attr.stroke-dashoffset="{{ strokeValue + 'px' }}"
+        ></path>
+      </svg>
+    </div> -->
+    <!-- scrollToTop end -->
+    <app-home-ten-footer></app-home-ten-footer>
+ 

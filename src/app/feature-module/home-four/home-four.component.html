@@ -1,0 +1,1050 @@
+<app-home-four-header></app-home-four-header>
+<!-- Banner Section -->
+     <section class="hero-section-three">			
+         <div class="container">
+             <div class="home-banner home-banner-three aos" data-aos="fade-up">
+                 <div class="row align-items-center w-100">
+                     <div class="col-lg-6 col-md-12 mx-auto">
+                         <div class="section-search section-section-three">
+                             <h4>Best Saloon Template</h4>
+                             <h1>Find the Awesome Saloon’s Near you</h1>
+                             <p>Hair and SPA Salons and fully integrated with theme tools that you can use for the promotion of your business.</p>
+                             <div class="d-flex">
+                                <a href="javascript:void(0);" class="btn btn-white d-flex align-items-center">Get
+                                    Started <i class="ti ti-circle-chevron-right ms-1"></i></a>
+                            </div>
+                         </div>
+                     </div>
+                     <div class="col-lg-6">
+                     </div>
+                 </div>
+             </div>	
+             <div class="search-box search-box-three aos" data-aos="fade-up">
+                <form action="/" class="d-flex search-form-profile">
+                    <div class="searchbox-list">
+                        <div class="search-input search-input-three">
+                            <div class="d-flex align-items-center">
+                            <i class="feather icon-check-square"></i>
+                            <div class="form-group mb-3">
+                                <mat-select [(ngModel)]="selectedValue" [ngModelOptions]="{standalone: true}" class="select-arrow select-content select"  placeholder="Select Service type">
+                                    <mat-option *ngFor="let data of selectedList" [value]="data.value">
+                                    {{data.value}}
+                                    </mat-option>
+                                </mat-select>
+                            </div>
+                        </div>
+                        </div>
+                <div class="search-input search-input-three">
+                    <i class="feather icon-map-pin me-2"></i>
+                    <div class="form-group mb-0">
+                        <input class="form-control" type="text" placeholder="Location">
+                    </div>
+                </div>
+                <div class="search-input search-input-three">
+                <div class="form-group mb-0 cus-mat-icon">
+                    <mat-datepicker-toggle matIconSuffix [for]="picker">
+                        <mat-icon matDatepickerToggleIcon class="">
+                          <span class="cus-icon">
+                            <i class="feather icon-calendar"></i>
+                          </span>
+                        </mat-icon>
+                      </mat-datepicker-toggle>
+                    <input class="form-control datetimepicker" type="text" placeholder="Add Date" matInput [matDatepicker]="picker">
+                    <mat-datepicker #picker></mat-datepicker>                        
+                </div>
+                </div>
+                </div>
+                <div class="search-btn search-btn-three">
+                
+                <button href="javascript:void(0);" class="btn btn-primary" type="submit"><i class="feather icon-search me-2"></i>Search</button>
+                </div>
+                </form>
+            </div>
+         </div>
+     </section>
+     <!-- /Banner Section -->
+
+ 
+ <!-- Services Section -->
+ <section class="services-section">
+     <div class="container">
+         <div class="services-header aos" data-aos="fade-up">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="section-content">
+                         <h2>Our Services</h2>
+                         <div class="our-img-all">
+                         <img src="assets/img/icons/scissor.svg" alt="">
+                         </div>
+                         <p>Our Barbershop & Tattoo Salon provides classic services combined with innovative techniques.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-md-12">
+                 <div class="services-slider aos" data-aos="fade-up">
+                     <owl-carousel-o [options]="serviceSectionOwl">
+                         <ng-container *ngFor="let data of serviceSection">
+                           <ng-template carouselSlide>
+                     <div class="services-all">
+                         <div class="services-main-img">
+                             <a href="javascript:void(0);">
+                                 <img class="img-fluid serv-image" alt="Service Image" [src]="data.img1">
+                             </a>
+                             <div class="service-foot">
+                                 <img [src]="data.img2" alt="img">
+                                 <h4>{{data.content}}</h4>
+                                 <h6>{{data.saloons}}</h6>
+                             </div>
+                         </div>
+                     </div>
+                 </ng-template>
+             </ng-container>
+             </owl-carousel-o>
+                 </div>
+             </div>
+         </div>
+     </div>
+     <div class="sidecircle-ryt">
+         <img src="assets/img/side-circle.png" alt="img">
+     </div>
+ </section>
+ <!-- /service Section -->
+ 
+ <!-- Service Section -->
+ <section class="service-section featured-saloons">
+
+    <div class="container">
+        <div class="services-header aos" data-aos="fade-up">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="section-content">
+                        <h2>Featured Saloons</h2>
+                        <div class="our-img-all-1">
+                            <img src="assets/img/icons/cuttor-small.svg" alt="Scissor">
+                        </div>
+                        <p>Our Barbershop & Tattoo Salon provides classic services combined with innovative
+                            techniques.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-xl-4 col-md-6 col-sm-6 col-12 d-flex">
+                <div class="card flex-fill aos" data-aos="fade-right">
+                    <div class="card-body">
+                        <div class="service-widget">
+                            <div class="service-img service-show-img">
+                                <a [routerLink]="routes.serviceDetails">
+                                    <img class="img-fluid serv-img" alt="Service Image"
+                                        src="assets/img/services/service-b-01.jpg">
+                                </a>
+                                <div class="item-info item-infos">
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-content service-content-three">
+                                <h3 class="title">
+                                    <a [routerLink]="routes.serviceDetails">Saloon 24 Hair Designers</a>
+                                </h3>
+                                <ul>
+                                    <li>Deep Pore Cleansing</li>
+                                    <li>Straight Razor Shave</li>
+                                </ul>
+                                <div class="main-saloons-profile">
+                                    <div class="saloon-profile-left">
+                                        <a [routerLink]="routes.providerDetails" class="saloon-img">
+                                            <img src="assets/img/profiles/avatar-20.jpg" alt="User">
+                                        </a>
+                                        <div class="saloon-content">
+                                            <div class="saloon-content-top mb-1">
+                                                <i class="feather-clock"></i>
+                                                <span>07:00 AM - 11:00 PM </span>
+                                            </div>
+                                            <div class="saloon-content-btn">
+                                                <span><i class="feather-map-pin"></i></span>
+                                                <span>Main Boulevard, Lahore,</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saloon-right">
+                                        <span>$70</span>
+                                    </div>
+                                </div>
+                                <div class="saloon-bottom">
+                                    <a [routerLink]="routes.serviceDetails" class="btn btn-dark"><i
+                                            class="feather-calendar me-2"></i>Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 col-12 d-flex">
+                <div class="card flex-fill aos" data-aos="fade-up">
+                    <div class="card-body">
+                        <div class="service-widget">
+                            <div class="service-img service-show-img">
+                                <a [routerLink]="routes.serviceDetails">
+                                    <img class="img-fluid serv-img" alt="Service Image"
+                                        src="assets/img/services/service-b-02.jpg">
+                                </a>
+                                <div class="item-info item-infos">
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-content service-content-three">
+                                <h3 class="title">
+                                    <a [routerLink]="routes.serviceDetails">The Rockstar Barber</a>
+                                </h3>
+                                <ul>
+                                    <li>Buzz Cut</li>
+                                    <li>Blowout</li>
+                                </ul>
+                                <div class="main-saloons-profile">
+                                    <div class="saloon-profile-left">
+                                        <a [routerLink]="routes.providerDetails" class="saloon-img">
+                                            <img src="assets/img/profiles/avatar-19.jpg" alt="User">
+                                        </a>
+                                        <div class="saloon-content">
+                                            <div class="saloon-content-top mb-1">
+                                                <i class="feather-clock"></i>
+                                                <span>09:00 AM - 05:00 PM </span>
+                                            </div>
+                                            <div class="saloon-content-btn">
+                                                <i class="feather-map-pin"></i>
+                                                <span>30 Small Street, Newyork</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saloon-right">
+                                        <span>$50</span>
+                                    </div>
+                                </div>
+                                <div class="saloon-bottom">
+                                    <a [routerLink]="routes.serviceDetails" class="btn btn-dark"><i
+                                            class="feather-calendar me-2"></i>Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 col-12 d-flex">
+                <div class="card flex-fill aos" data-aos="fade-left">
+                    <div class="card-body">
+                        <div class="service-widget">
+                            <div class="service-img service-show-img">
+                                <a [routerLink]="routes.serviceDetails">
+                                    <img class="img-fluid serv-img" alt="Service Image"
+                                        src="assets/img/services/service-b-03.jpg">
+                                </a>
+                                <div class="item-info item-infos">
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-content service-content-three">
+                                <h3 class="title">
+                                    <a [routerLink]="routes.serviceDetails">Femina Hairstyle</a>
+                                </h3>
+                                <ul>
+                                    <li>Pore Cleansing</li>
+                                    <li>Hair Style Menicure</li>
+                                </ul>
+                                <div class="main-saloons-profile">
+                                    <div class="saloon-profile-left">
+                                        <a [routerLink]="routes.providerDetails" class="saloon-img">
+                                            <img src="assets/img/profiles/avatar-18.jpg" alt="User">
+                                        </a>
+                                        <div class="saloon-content">
+                                            <div class="saloon-content-top mb-1">
+                                                <i class="feather-clock"></i>
+                                                <span>09:00 AM - 07:00 PM </span>
+                                            </div>
+                                            <div class="saloon-content-btn">
+                                                <i class="feather-map-pin"></i>
+                                                <span>Bungalow, Omaha</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saloon-right">
+                                        <span>$40</span>
+                                    </div>
+                                </div>
+                                <div class="saloon-bottom">
+                                    <a [routerLink]="routes.serviceDetails" class="btn btn-dark"><i
+                                            class="feather-calendar me-2"></i>Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 col-12 d-flex">
+                <div class="card flex-fill  aos" data-aos="fade-right">
+                    <div class="card-body">
+                        <div class="service-widget">
+                            <div class="service-img service-show-img">
+                                <a [routerLink]="routes.serviceDetails">
+                                    <img class="img-fluid serv-img" alt="Service Image"
+                                        src="assets/img/services/service-b-04.jpg">
+                                </a>
+                                <div class="item-info item-infos">
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-content service-content-three">
+                                <h3 class="title">
+                                    <a [routerLink]="routes.serviceDetails">Master Barber</a>
+                                </h3>
+                                <ul>
+                                    <li>Hair Cut</li>
+                                    <li>Hair Styling</li>
+
+                                </ul>
+                                <div class="main-saloons-profile">
+                                    <div class="saloon-profile-left">
+                                        <a [routerLink]="routes.providerDetails" class="saloon-img">
+                                            <img src="assets/img/profiles/avatar-17.jpg" alt="User">
+                                        </a>
+                                        <div class="saloon-content">
+                                            <div class="saloon-content-top mb-1">
+                                                <i class="feather-clock"></i>
+                                                <span>08:00 AM - 05:00 PM </span>
+                                            </div>
+                                            <div class="saloon-content-btn">
+                                                <i class="feather-map-pin"></i>
+                                                <span>Villa Drive, South</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saloon-right">
+                                        <span>$36</span>
+                                    </div>
+                                </div>
+                                <div class="saloon-bottom">
+                                    <a [routerLink]="routes.serviceDetails" class="btn btn-dark"><i
+                                            class="feather-calendar me-2"></i>Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 col-12 d-flex ">
+                <div class="card flex-fill aos" data-aos="fade-up">
+                    <div class="card-body">
+                        <div class="service-widget">
+                            <div class="service-img service-show-img">
+                                <div class="service-img-top">
+                                    <a [routerLink]="routes.serviceDetails">
+                                        <img class="img-fluid serv-img" alt="Service Image"
+                                            src="assets/img/services/service-b-05.jpg">
+                                    </a>
+                                </div>
+                                <div class="item-info item-infos">
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-content service-content-three">
+                                <h3 class="title">
+                                    <a [routerLink]="routes.serviceDetails">Cut & Colors Hair Dressers</a>
+                                </h3>
+                                <ul>
+                                    <li>Face Cleaning</li>
+                                    <li>Clean Shaving</li>
+                                </ul>
+                                <div class="main-saloons-profile">
+                                    <div class="saloon-profile-left">
+                                        <a [routerLink]="routes.providerDetails" class="saloon-img">
+                                            <img src="assets/img/profiles/avatar-15.jpg" alt="User">
+                                        </a>
+                                        <div class="saloon-content">
+                                            <div class="saloon-content-top mb-1">
+                                                <i class="feather-clock"></i>
+                                                <span>09:00 AM - 06:00 PM </span>
+                                            </div>
+                                            <div class="saloon-content-btn">
+                                                <i class="feather-map-pin"></i>
+                                                <span>Sarah Drive, Lafayette</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saloon-right">
+                                        <span>$42</span>
+                                    </div>
+                                </div>
+                                <div class="saloon-bottom">
+                                    <a [routerLink]="routes.serviceDetails" class="btn btn-dark"><i
+                                            class="feather-calendar me-2"></i>Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-6 col-12 d-flex">
+                <div class="card flex-fill aos" data-aos="fade-left">
+                    <div class="card-body">
+                        <div class="service-widget">
+                            <div class="service-img service-show-img">
+                                <a [routerLink]="routes.serviceDetails">
+                                    <img class="img-fluid serv-img" alt="Service Image"
+                                        src="assets/img/services/service-b-06.jpg">
+                                </a>
+                                <div class="item-info item-infos">
+                                    <div class="rating">
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                        <i class="fas fa-star filled"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="service-content service-content-three">
+                                <h3 class="title">
+                                    <a href="#">Rearhair Stylist</a>
+                                </h3>
+                                <ul>
+                                    <li>Face Cleaning</li>
+                                    <li>Hair Styling</li>
+                                </ul>
+                                <div class="main-saloons-profile">
+                                    <div class="saloon-profile-left">
+                                        <a [routerLink]="routes.providerDetails" class="saloon-img">
+                                            <img src="assets/img/profiles/avatar-20.jpg" alt="User">
+                                        </a>
+                                        <div class="saloon-content">
+                                            <div class="saloon-content-top mb-1">
+                                                <i class="feather-clock"></i>
+                                                <span>09:00 AM - 11:00 PM </span>
+                                            </div>
+                                            <div class="saloon-content-btn">
+                                                <i class="feather-map-pin"></i>
+                                                <span>Nash Street, Southfield</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="saloon-right">
+                                        <span>$70</span>
+                                    </div>
+                                </div>
+                                <div class="saloon-bottom">
+                                    <a [routerLink]="routes.serviceDetails" class="btn btn-dark"><i
+                                            class="feather-calendar me-2"></i>Book Appointment</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- /Service Section -->
+
+ <!-- Appointment Section -->
+ <section class="appointment-section aos" data-aos="fade-up">
+     <div class="container">
+         <div class="appointment-main">
+             <h6>GET A MODERN LOOK</h6>
+             <h2>Upto 25% offer on First Appointment</h2>
+             <p>No one you see is smarter than he so join us here are sure to get a smile from seven stranded.</p>
+             <div class="appointment-btn">
+                 <a [routerLink]="routes.freeTrial" class="btn btn-primary" >BOOK AN APPOINTMENT NOW</a>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- /Appointment Section -->
+
+ <!-- Services Section -->
+ <section class="services-section stylists-section">
+     <div class="container">
+         <div class="services-header aos" data-aos="fade-up">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="section-content">
+                         <h2>Featured Stylists</h2>
+                         <div class="our-img-all">
+                         <img src="assets/img/icons/scissor.svg" alt="">
+                         </div>
+                         <p>Our Barbershop & Tattoo Salon provides classic services combined with innovative techniques.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-md-12">
+                 <div class="stylists-slider aos" data-aos="fade-up">
+                     <owl-carousel-o [options]="featuredStylistsOwl">
+                         <ng-container *ngFor="let data of featuredStylists">
+                           <ng-template carouselSlide>
+                     <div class="stylists-all card">
+                         <div class="card-body">
+                         <div class="stylists-main-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-image" alt="Service Image" [src]="data.img">
+                             </a>
+                         </div>
+                         <div class="stylists-bottom">
+                             <div class="stylists-foot">
+                                 <div class="stylists-rating mb-2">
+                                     <div class="rating mb-0">
+                                         <i class="fas fa-star filled"></i>
+                                         <i class="fas fa-star filled"></i>
+                                         <i class="fas fa-star filled"></i>
+                                         <i class="fas fa-star filled"></i>
+                                         <i class="fas fa-star filled"></i>
+                                     </div>
+                                 </div>
+                                 <a [routerLink]="routes.serviceDetails"><h4>{{data.name}}</h4></a>
+                                 <h6>{{data.bookings}}</h6>
+                                
+                             </div>
+                         </div>
+                         </div>
+                         
+                     </div>
+                 </ng-template>
+             </ng-container>
+             </owl-carousel-o>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- /service Section -->
+
+ <!-- Service Section -->
+ <section class="service-section populars-section">		
+     <div class="container">
+         <div class="services-header aos" data-aos="fade-up">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="section-content">
+                         <h2>Popular Locations</h2>
+                         <div class="our-img-all">
+                         <img src="assets/img/icons/scissor.svg" alt="">
+                         </div>
+                         <p>Our Barbershop & Tattoo Salon provides classic services combined with innovative
+                             techniques.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row aos" data-aos="fade-up">
+             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                 <div class="service-slider">
+                     <div class="service-widget">
+                         <div class="service-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-30.jpg">
+                             </a>
+                         </div>
+                         <div class="service-content popular-content">
+                             <a [routerLink]="routes.serviceDetails"><h3>USA</h3></a>
+                             <h6>49 Saloons</h6>
+                         </div>
+                     </div>				
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                 <div class="service-slider">
+                     <div class="service-widget">
+                         <div class="service-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-105.jpg">
+                             </a>
+                         </div>
+                         <div class="service-content popular-content">
+                             <a [routerLink]="routes.serviceDetails"><h3>UK</h3></a>
+                             <h6>49 Saloons</h6>
+                         </div>
+                     </div>				
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                 <div class="service-slider">
+                     <div class="service-widget">
+                         <div class="service-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-92.jpg">
+                             </a>
+                         </div>
+                         <div class="service-content popular-content">
+                             <a [routerLink]="routes.serviceDetails"><h3>Mexico</h3></a>
+                             <h6>49 Saloons</h6>
+                         </div>
+                     </div>				
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                 <div class="service-slider">
+                     <div class="service-widget">
+                         <div class="service-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-93.jpg">
+                             </a>
+                         </div>
+                         <div class="service-content popular-content">
+                             <a [routerLink]="routes.serviceDetails"><h3>UAE</h3></a>
+                             <h6>49 Saloons</h6>
+                         </div>
+                     </div>				
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                 <div class="service-slider">
+                     <div class="service-widget">
+                         <div class="service-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-94.jpg">
+                             </a>
+                         </div>
+                         <div class="service-content popular-content">
+                             <a [routerLink]="routes.serviceDetails"><h3>France</h3></a>
+                             <h6>49 Saloons</h6>
+                         </div>
+                     </div>				
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                 <div class="service-slider">
+                     <div class="service-widget">
+                         <div class="service-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-96.jpg">
+                             </a>
+                         </div>
+                         <div class="service-content popular-content">
+                             <a [routerLink]="routes.serviceDetails"><h3>Germany</h3></a>
+                             <h6>49 Saloons</h6>
+                         </div>
+                     </div>				
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                 <div class="service-slider">
+                     <div class="service-widget">
+                         <div class="service-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-96.jpg">
+                             </a>
+                         </div>
+                         <div class="service-content popular-content">
+                             <a [routerLink]="routes.serviceDetails"><h3>Italy</h3></a>
+                             <h6>49 Saloons</h6>
+                         </div>
+                     </div>				
+                 </div>
+             </div>
+             <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+                 <div class="service-slider">
+                     <div class="service-widget">
+                         <div class="service-img">
+                             <a [routerLink]="routes.serviceDetails">
+                                 <img class="img-fluid serv-img" alt="Service Image" src="assets/img/services/service-97.jpg">
+                             </a>
+                         </div>
+                         <div class="service-content popular-content">
+                             <a [routerLink]="routes.serviceDetails"><h3>Argentina</h3></a>
+                             <h6>49 Saloons</h6>
+                         </div>
+                     </div>				
+                 </div>
+             </div>
+             <div class="btn-sec btn-saloons aos" data-aos="fade-up">
+                 <a [routerLink]="routes.serviceDetails" class="btn btn-primary btn-view">VIEW ALL 590 LOCATION</a>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- /Service Section -->
+
+ <!-- Works Section -->
+ <section class="works-section">
+     <div class="container">
+         <div class="services-header aos" data-aos="fade-up">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="section-content">
+                         <h2>How It Works</h2>
+                         <div class="our-img-all">
+                         <img src="assets/img/icons/scissor.svg" alt="">
+                         </div>
+                         <p>Our Barbershop & Tattoo Salon provides classic services combined with innovative techniques.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-md-4 col-sm-6 col-12">
+                 <div class="works-main aos" data-aos="fade-right">
+                     <div class="works-tops">
+                         <div class="works-top-img">
+                             <img src="assets/img/services/service-30.jpg" alt="">
+                             <span>1</span>
+                         </div>
+                     </div>
+                     <div class="works-bottom">
+                         <a href="javascript:void(0);"><h2>Discover</h2></a>
+                         <p>Customers can browse or search for specific products or services using categories,
+                             filters, or search bars.</p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-4 col-sm-6 col-12">
+                 <div class="works-main aos" data-aos="fade-up">
+                     <div class="works-tops">
+                         <div class="works-top-img works-load-profile">
+                             <img src="assets/img/services/service-25.jpg" alt="">
+                             <span>2</span>
+                         </div>
+                     </div>
+                     <div class="works-bottom">
+                         <a href="javascript:void(0);"><h2>Book</h2></a>
+                         <p>Customers can add items to their shopping cart. For services, they may select a
+                             service and proceed to book.
+                         </p>
+                     </div>
+                 </div>
+             </div>
+             <div class="col-md-4 col-sm-6 col-12">
+                 <div class="works-main aos" data-aos="fade-left">
+                     <div class="works-tops">
+                         <div class="works-top-img">
+                             <img src="assets/img/services/service-30.jpg" alt="">
+                             <span>3</span>
+                         </div>
+                     </div>
+                     <div class="works-bottom">
+                         <a href="javascript:void(0);"><h2>Enjoy</h2></a>
+                         <p>The Customer fulfills the order by either providing the service to the Customers &
+                             Get leads from the local Persons in our Platform.
+                         </p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- /Works Section -->
+
+ <!-- client section -->
+ <section class="client-sections review-four">
+     <div class="container">
+         <div class="services-header aos" data-aos="fade-up">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="section-content section-client">
+                         <h2>What Our Client Says</h2>
+                         <div class="our-img-all">
+                         <img src="assets/img/icons/scissor-white.svg" alt="">
+                         </div>
+                         <p>Our Barbershop & Tattoo Salon provides classic services combined with innovative techniques.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+          <ngx-slick-carousel class=" slider say-about slider-for aos" #slickModal="slick-carousel" [config]="slideConfig">
+             <div ngxSlickItem *ngFor="let data of reviews">
+                 <div class="review-love-group">
+                     <div class="quote-love-img">
+                         <img class="img-fluid" src="assets/img/icons/quote.svg" alt="">
+                     </div>
+                     <p class="review-passage">“ Vitae amet cras nulla mi laoreet quis amet phasellus. Enim orci lacus quam mauris nunc ultrices duis. Ornare leo mi aenean egestas montes cras.Vitae amet cras nulla mi laoreet quis amet phasellus. Enim orci lacus quam mauris nunc ultrices duis. Ornare leo mi aenean egestas montes cras. Egestas erat viverra scelerisque bibendum. “</p>
+                     <div class="say-name-blk text-center">
+                         <h5>{{data.name}}</h5>
+                         <p>{{data.country}}</p>
+                     </div>
+                 </div>
+             </div>
+             
+         </ngx-slick-carousel>
+         <ngx-slick-carousel  #slickModal="slick-carousel" class=" slider client-img slider-nav client-pro aos " [config]="slideConfig2">
+             <div ngxSlickItem *ngFor=" let data of reviews">
+                 <div  class="testimonial-thumb">
+                     <img [src]="data.img"  alt="">
+                 </div>
+             </div>
+           
+         </ngx-slick-carousel> 
+         
+            
+             
+       
+         
+         
+        
+     </div>
+ </section>
+ <!-- /client section -->
+ 
+ <!-- latest section -->
+ <section class="services-section latest-section blog-section-three">
+     <div class="container">
+         <div class="services-header aos" data-aos="fade-up">
+             <div class="row">
+                 <div class="col-md-12">
+                     <div class="section-content">
+                         <h2>Our Latest News</h2>
+                         <div class="our-img-all">
+                         <img src="assets/img/icons/scissor.svg" alt="">
+                         </div>
+                         <p>Our Barbershop & Tattoo Salon provides classic services combined with innovative techniques.</p>
+                     </div>
+                 </div>
+             </div>
+         </div>
+         <div class="row">
+             <div class="col-md-12">
+                 <div class="latest-slider aos" data-aos="fade-up">
+                     <owl-carousel-o [options]="latestSliderOwl">
+                       
+                           <ng-template carouselSlide>
+                            <div class="blog blog-new flex-fill">
+								<div class="blog-image">
+									<a [routerLink]="routes.blogDetails"><img class="img-fluid"
+											src="assets/img/services/service-101.jpg" alt="Post Image"></a>
+									<div class="date">
+										15<span>Nov 2023</span>
+									</div>
+								</div>
+								<div class="blog-content mb-0">
+									<div class="blog-category">
+										<ul>
+											<li>
+												<a href=""><span class="cat-blog">Hair Cut</span></a>
+											</li>
+											<li>
+												<a href=""><span class="cat-blog">Facial</span></a>
+											</li>
+										</ul>
+									</div>
+									<h3 class="blog-title">
+										<a [routerLink]="routes.blogDetails">
+											Take advantage of trial periods or consultations
+										</a>
+									</h3>
+									<div class="blog-view d-flex">
+										<a [routerLink]="routes.blogDetails"
+											class="btn btn-light d-flex w-100 justify-content-center text-dark">Read
+											More</a>
+									</div>
+								</div>
+							</div>
+                           </ng-template>
+                           <ng-template carouselSlide>
+                            <div class="blog blog-new flex-fill">
+								<div class="blog-image">
+									<a [routerLink]="routes.blogDetails"><img class="img-fluid"
+											src="assets/img/services/service-102.jpg" alt="Post Image"></a>
+									<div class="date">
+										15<span>Nov 2023</span>
+									</div>
+								</div>
+								<div class="blog-content mb-0">
+									<div class="blog-category">
+										<ul>
+											<li>
+												<a href=""><span class="cat-blog">Hair Cut</span></a>
+											</li>
+											<li>
+												<a href=""><span class="cat-blog">Facial</span></a>
+											</li>
+										</ul>
+									</div>
+									<h3 class="blog-title">
+										<a [routerLink]="routes.blogDetails">
+											Maximize your business potential right service
+										</a>
+									</h3>
+									<div class="blog-view d-flex">
+										<a [routerLink]="routes.blogDetails"
+											class="btn btn-light d-flex w-100 justify-content-center text-dark">Read
+											More</a>
+									</div>
+								</div>
+							</div>
+                           </ng-template>
+                           <ng-template carouselSlide>
+                            <div class="blog blog-new flex-fill">
+								<div class="blog-image">
+									<a [routerLink]="routes.blogDetails"><img class="img-fluid"
+											src="assets/img/services/service-103.jpg" alt="Post Image"></a>
+									<div class="date">
+										15<span>Nov 2023</span>
+									</div>
+								</div>
+								<div class="blog-content mb-0">
+									<div class="blog-category">
+										<ul>
+											<li>
+												<a href=""><span class="cat-blog">Hair Cut</span></a>
+											</li>
+											<li>
+												<a href=""><span class="cat-blog">Facial</span></a>
+											</li>
+										</ul>
+									</div>
+									<h3 class="blog-title">
+										<a [routerLink]="routes.blogDetails">
+											Specific features and benefits of your service.
+										</a>
+									</h3>
+									<div class="blog-view d-flex">
+										<a [routerLink]="routes.blogDetails"
+											class="btn btn-light d-flex w-100 justify-content-center text-dark">Read
+											More</a>
+									</div>
+								</div>
+							</div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="blog blog-new flex-fill">
+                                    <div class="blog-image">
+                                        <a [routerLink]="routes.blogDetails"><img class="img-fluid"
+                                                src="assets/img/services/service-104.jpg" alt="Post Image"></a>
+                                        <div class="date">
+                                            15<span>Nov 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content mb-0">
+                                        <div class="blog-category">
+                                            <ul>
+                                                <li>
+                                                    <a href=""><span class="cat-blog">Hair Cut</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href=""><span class="cat-blog">Facial</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="blog-title">
+                                            <a [routerLink]="routes.blogDetails">
+                                                One of the biggest use of service marketplace
+                                            </a>
+                                        </h3>
+                                        <div class="blog-view d-flex">
+                                            <a [routerLink]="routes.blogDetails"
+                                                class="btn btn-light d-flex w-100 justify-content-center text-dark">Read
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+                            <ng-template carouselSlide>
+                                <div class="blog blog-new flex-fill">
+                                    <div class="blog-image">
+                                        <a [routerLink]="routes.blogDetails"><img class="img-fluid"
+                                                src="assets/img/services/service-102.jpg" alt="Post Image"></a>
+                                        <div class="date">
+                                            15<span>Nov 2023</span>
+                                        </div>
+                                    </div>
+                                    <div class="blog-content mb-0">
+                                        <div class="blog-category">
+                                            <ul>
+                                                <li>
+                                                    <a href=""><span class="cat-blog">Hair Cut</span></a>
+                                                </li>
+                                                <li>
+                                                    <a href=""><span class="cat-blog">Facial</span></a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                        <h3 class="blog-title">
+                                            <a [routerLink]="routes.blogDetails">
+                                                One of the biggest use of service marketplace
+                                            </a>
+                                        </h3>
+                                        <div class="blog-view d-flex">
+                                            <a href="#"
+                                                class="btn btn-light d-flex w-100 justify-content-center text-dark">Read
+                                                More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </ng-template>
+             
+             </owl-carousel-o>
+                 </div>
+             </div>
+         </div>
+     </div>
+ </section>
+ <!-- /latest section -->
+
+ <!-- register section -->
+ <section class="register-section aos" data-aos="fade-up">
+     <div class="container">
+           <div class="row">
+             <div class="col-lg-12 col-12">
+                   <div class="register-content">
+                     <h2>Get Registered and List your Saloon for free!!!</h2>
+                     <div class="register-btn">
+                         <a [routerLink]="routes.Register"><i class="feather icon-users me-2"></i>Register Now </a>
+                        
+                     </div>
+                   </div>
+             </div>
+           </div>
+     </div>
+   </section>
+   <!--/register section  --> 
+       <!-- scrollToTop start -->
+ <!-- <div
+ (click)="scrollToTop()" (keydown.enter)="scrollToTop()" tabindex="0"
+ class="progress-wrap progress-wrap-three"
+ [class.active-progress]="strokeValue < progress"
+>
+ <svg
+   class="progress-circle svg-content"
+   width="100%"
+   height="100%"
+   viewBox="-1 -1 102 102"
+ >
+   <path
+     d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+     style="transition: stroke-dashoffset 10ms linear 0s"
+     attr.stroke-dasharray="{{ progress + 'px' + ',' + progress + 'px' }}"
+     attr.stroke-dashoffset="{{ strokeValue + 'px' }}"
+   ></path>
+ </svg>
+</div> -->
+<!-- scrollToTop end -->
+<app-home-four-footer></app-home-four-footer>

@@ -1,0 +1,1572 @@
+<section class="hero-section-five">
+  <app-home-nine-header></app-home-nine-header>
+  <div class="container">
+    <div class="home-banner home-banner-three">
+      <div class="row align-items-center w-100">
+        <div class="col-lg-6 col-md-12 mx-auto">
+          <div class="section-search section-section-five">
+           
+            <h1 class="display-3">The Largest Professional <span>Car</span> Wash</h1>
+           
+            <p>
+              We value your time and therefore washing your car at our car wash
+              will take no more than 15 minutes.
+            </p>
+            <div class="search-box search-box-five">
+              <form action="/" class="search-box-form">
+                <div class="search-input">
+                  
+                  <div class="form-group  w-100 mb-0 dropdown-select">
+                    <label for="">What</label>
+                    <mat-select
+                      [(ngModel)]="selectedValue1"
+                      [ngModelOptions]="{ standalone: true }"
+                      class="select-arrow select"
+                      placeholder="Job Title, Keywords"
+                    >
+                      <mat-option
+                        *ngFor="let data of selectedList1"
+                        [value]="data.value"
+                      >
+                        {{ data.value }}
+                      </mat-option>
+                    </mat-select>
+                  </div>
+                </div>
+                <div class="search-input">
+                  
+                  <div class="form-group mb-0 dropdown-select">
+                    <label for="">Where</label>
+                    <mat-select
+                      [(ngModel)]="selectedValue2"
+                      [ngModelOptions]="{ standalone: true }"
+                      class="select-arrow select"
+                      placeholder="Choose "
+                    >
+                      <mat-option
+                        *ngFor="let data of selectedList2"
+                        [value]="data.value"
+                      >
+                        {{ data.value }}
+                      </mat-option>
+                    </mat-select>
+                  </div>
+                </div>
+                <div class="search-btn search-input">
+                  <div class="form-group">
+                    <a href="javascript:void(0);" class="btn btn-primary">Book Now</a>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6">
+          <div class="floating-img">
+            <img
+              src="./assets/img/audi.png"
+              alt="audi"
+              class="img-fluid rotate-img"
+            />
+          </div>
+          <div class="car-five-arrow-img">
+            <img src="./assets/img/car-five-arrow.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Feature Section -->
+
+<section class="featured-categories-section">
+  <div class="featured-category-bg-img">
+    <img src="assets/img/car-category-five.png" alt="" />
+  </div>
+  <div class="container">
+    <div class="floating-five-main">
+      <div class="floating-five-buttom">
+        <div class="floating-five-buttom-all">
+          <h5 class="text-primary">1430 k</h5>
+          <p>Cars Washed</p>
+        </div>
+        <div class="floating-five-buttom-img">
+          <i class="feather icon-users"></i>
+        </div>
+      </div>
+      <div class="floating-five-buttom">
+        <div class="floating-five-buttom-all">
+          <h5 class="text-secondary">987 k</h5>
+          <p>Happy Clients</p>
+        </div>
+        <div class="floating-five-buttom-img floating-fives-buttom-img">
+          <i class="feather icon-users"></i>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div
+          class="section-heading car-wash-heading car-wash-feature aos"
+          data-aos="fade-up"
+        >
+          <div class="car-wash-img-five">
+            <img
+              src="assets/img/icons/car-wash-header-1.svg"
+              alt=""
+              class="car-wash-header-one"
+            />
+            <h2>Featured Categories</h2>
+            <img
+              src="assets/img/icons/car-wash-header-2.svg"
+              alt=""
+              class="car-wash-header-two"
+            />
+          </div>
+          <p>What do you need to find?</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="service-widget service-two aos" data-aos="fade-up">
+          <div class="service-img service-four-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-01.jpg"
+              />
+            </a>
+          </div>
+          <div class="service-content service-content-five">
+            <div class="feature-content-bottom">
+              <p>Exterior Washing</p>
+              <a href="javascript:void(0);"
+                ><i class="feather icon-users text-primary me-2"></i>15</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="service-widget service-two aos" data-aos="fade-up">
+          <div class="service-img service-four-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-02.jpg"
+              />
+            </a>
+          </div>
+          <div class="service-content service-content-five">
+            <div class="feature-content-bottom">
+              <p>Interior Washing</p>
+              <a href="javascript:void(0);"
+                ><i class="feather icon-users text-primary me-2"></i>05</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="service-widget service-two aos" data-aos="fade-up">
+          <div class="service-img service-four-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-03.jpg"
+              />
+            </a>
+          </div>
+          <div class="service-content service-content-five">
+            <div class="feature-content-bottom">
+              <p>Vacuum Cleaning</p>
+              <a href="javascript:void(0);"
+                ><i class="feather icon-users text-primary me-2"></i>95</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="service-widget service-two aos" data-aos="fade-up">
+          <div class="service-img service-four-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-4.jpg"
+              />
+            </a>
+          </div>
+          <div class="service-content service-content-five">
+            <div class="feature-content-bottom">
+              <p>Hand Car Wash</p>
+              <a href="javascript:void(0);"
+                ><i class="feather icon-users text-primary me-2"></i>23</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="service-widget service-two aos" data-aos="fade-up">
+          <div class="service-img service-four-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-05.jpg"
+              />
+            </a>
+          </div>
+          <div class="service-content service-content-five">
+            <div class="feature-content-bottom">
+              <p>Chemical Car Wash</p>
+              <a href="javascript:void(0);"
+                ><i class="feather icon-users text-primary me-2"></i>10</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="service-widget service-two aos" data-aos="fade-up">
+          <div class="service-img service-four-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-06.jpg"
+              />
+            </a>
+          </div>
+          <div class="service-content service-content-five">
+            <div class="feature-content-bottom">
+              <p>Steam Car Wash</p>
+              <a href="javascript:void(0);"
+                ><i class="feather icon-users text-primary me-2"></i>45</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Feature Section -->
+
+<!-- Featured Services -->
+<section class="feature-category-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="section-heading car-wash-heading aos" data-aos="fade-up">
+          <div class="car-wash-img-five">
+            <div class="car-wash-img-five">
+              <img
+                src="assets/img/icons/car-wash-header-1.svg"
+                alt="image"
+                class="car-wash-header-one"
+              />
+              <h2>Featured Services</h2>
+              <img
+                src="assets/img/icons/car-wash-header-2.svg"
+                alt="image"
+                class="car-wash-header-two"
+              />
+            </div>
+          </div>
+          <p>Explore the greates our services. You won’t be disappointed</p>
+        </div>
+      </div>
+    </div>
+    <div class="row feature-category-nine">
+      <div class="col-lg-4 col-md-6 col-12 d-flex">
+        <div class="service-widget flex-fill w-100 aos" data-aos="fade-up">
+          <div class="service-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-01.jpg"
+              />
+            </a>
+            <div class="fav-item">
+              <div class="features-service-five">
+                <div class="features-service-rating">
+                  <i class="fas fa-star filled"></i><span>4.9</span>
+                </div>
+              </div>
+              <a href="javascript:void(0)" class="fav-icon fav-icon-five">
+                <i class="feather icon-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="service-content service-feature-five">
+            <h3 class="title">
+              <a [routerLink]="routes.serviceDetails">Basic Washing - Compact SUV</a>
+            </h3>
+            <p>
+              <i class="feather icon-map-pin me-2"></i>Bernardo Street, Tampa, USA
+            </p>
+            <div class="feature-services-five">
+              <h6>$45.00</h6>
+              <span>$96.00</span>
+            </div>
+            <div class="feature-service-botton">
+              <div class="d-flex align-items-center">
+                <img src="assets/img/profiles/avatar-25.jpg" alt="User" />
+                <p class="fs-14 mb-0 ms-2">Madeline Hilli</p>
+              </div>
+              <div>
+                <a [routerLink]="routes.serviceDetails" class="btn btn-dark">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 d-flex">
+        <div class="service-widget flex-fill w-100 aos" data-aos="fade-up">
+          <div class="service-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-02.jpg"
+              />
+            </a>
+            <div class="fav-item">
+              <div class="features-service-five">
+                <div class="features-service-rating">
+                  <i class="fas fa-star filled"></i><span>4.9</span>
+                </div>
+              </div>
+              <a href="javascript:void(0)" class="fav-icon fav-icon-five">
+                <i class="feather icon-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="service-content service-feature-five">
+            <h3 class="title">
+              <a [routerLink]="routes.serviceDetails">Interior Washing - Compact SUV</a>
+            </h3>
+            <p>
+              <i class="feather icon-map-pin me-2"></i>Hartway Street, Gettysburg,
+              USA
+            </p>
+            <div class="feature-services-five">
+              <h6>$24.00</h6>
+              <span>$69.00</span>
+            </div>
+            <div class="feature-service-botton">
+              <div class="d-flex align-items-center">
+                <img src="assets/img/profiles/avatar-15.jpg" alt="User" />
+                <p class="fs-14 mb-0 ms-2">Cynthia Tyree</p>
+              </div>
+              <div>
+                <a [routerLink]="routes.serviceDetails" class="btn btn-dark">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12 d-flex">
+        <div class="service-widget flex-fill w-100 aos" data-aos="fade-up">
+          <div class="service-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                src="assets/img/car-wash/car-03.jpg"
+              />
+            </a>
+            <div class="fav-item">
+              <div class="features-service-five">
+                <div class="features-service-rating">
+                  <i class="fas fa-star filled"></i><span>4.9</span>
+                </div>
+              </div>
+              <a href="javascript:void(0)" class="fav-icon fav-icon-five">
+                <i class="feather icon-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="service-content service-feature-five">
+            <h3 class="title">
+              <a [routerLink]="routes.serviceDetails">Vacuum Washing - Compact SUV</a>
+            </h3>
+            <p>
+              <i class="feather icon-map-pin me-2"></i>Havanna Street, Greensboro,
+              USA
+            </p>
+            <div class="feature-services-five">
+              <h6>$35.00</h6>
+              <span>$42.00</span>
+            </div>
+            <div class="feature-service-botton">
+              <div class="d-flex align-items-center">
+                <img src="assets/img/profiles/avatar-13.jpg" alt="User" />
+                <p class="fs-14 mb-0 ms-2">Adrian Lessli</p>
+              </div>
+              <div>
+                <a [routerLink]="routes.serviceDetails" class="btn btn-dark">Book Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-sec btn-sec-five aos" data-aos="fade-up">
+      <a [routerLink]="routes.search" class="btn btn-primary">View all Services</a>
+    </div>
+  </div>
+</section>
+<!-- /Featured Services -->
+
+<!-- Providers Section -->
+<section class="providers-section-five">
+  <div class="providers-five-bg-car">
+    <img src="assets/img/car-provider-bg.png" alt="" />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="section-heading car-wash-heading aos" data-aos="fade-up">
+          <div class="car-wash-img-five">
+            <img
+              src="assets/img/icons/car-wash-header-1.svg"
+              alt=""
+              class="car-wash-header-one"
+            />
+            <h2>Top Providers</h2>
+            <img
+              src="assets/img/icons/car-wash-header-2.svg"
+              alt=""
+              class="car-wash-header-two"
+            />
+          </div>
+          <p>Meet Our Experts</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-providers-five">
+          <owl-carousel-o [options]="topExpertsOwl">
+            <ng-container *ngFor="let data of topExperts">
+              <ng-template carouselSlide>
+                <div class="providerset">
+                  <div class="providerset-img">
+                    <a [routerLink]="routes.providerDetails">
+                      <img [src]="data.img" alt="img" />
+                    </a>
+                  </div>
+                  <div class="providerset-content">
+                    <h4>
+                      <a [routerLink]="routes.providerDetails">{{
+                        data.name
+                      }}</a
+                      ><i class="fa fa-check-circle" aria-hidden="true"></i>
+                    </h4>
+                    <h5>{{ data.work }}</h5>
+                    <div class="provider-rating">
+                      <div class="rating">
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fas fa-star filled"></i>
+                        <i class="fa-solid fa-star-half-stroke filled"></i
+                        ><span>{{ data.ratings }}</span>
+                      </div>
+                      <div class="provider-cash">
+                        <h5>{{ data.price }}</h5>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- Providers Section -->
+
+<!-- How It Works -->
+<section class="works-five-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="section-heading car-wash-heading aos" data-aos="fade-up">
+          <div class="car-wash-img-five">
+            <img
+              src="assets/img/icons/car-wash-header-1.svg"
+              alt=""
+              class="car-wash-header-one"
+            />
+            <h2>How It Works</h2>
+            <img
+              src="assets/img/icons/car-wash-header-2.svg"
+              alt=""
+              class="car-wash-header-two"
+            />
+          </div>
+          <p>
+            Straightforward process designed to make your experience seamless
+            and hassle-free.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-4 col-sm-6 col-12">
+        <div class="works-it-five-button-main">
+          <div class="works-it-five-button">
+            <h4>01</h4>
+          </div>
+          <div class="works-it-dots">
+            <span></span>
+          </div>
+          <div class="works-it-lines">
+            <span></span>
+          </div>
+        </div>
+        <div class="works-five-main">
+          <div class="works-five-img">
+            <img src="assets/img/works-3.jpg" alt="image" />
+          </div>
+          <div class="works-five-bottom">
+            <h5>Search and Browse</h5>
+            <p>
+              Customers can browse or search for specific products or services
+              using categories, filters.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-12">
+        <div class="works-it-five-button-main">
+          <div class="works-it-five-button">
+            <h4>02</h4>
+          </div>
+          <div class="works-it-dots">
+            <span></span>
+          </div>
+          <div class="works-it-lines">
+            <span></span>
+          </div>
+        </div>
+        <div class="works-five-main">
+          <div class="works-five-img">
+            <img src="assets/img/works-2.jpg" alt="image" />
+          </div>
+          <div class="works-five-bottom">
+            <h5>Add to Cart or Book Now</h5>
+            <p>
+              Customers can add items to their shopping cart. For services, they
+              may select a best service
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-sm-6 col-12">
+        <div class="works-it-five-button-main">
+          <div class="works-it-five-button">
+            <h4>03</h4>
+          </div>
+          <div class="works-it-dots">
+            <span></span>
+          </div>
+        </div>
+        <div class="works-five-main">
+          <div class="works-five-img">
+            <img src="assets/img/works-1.jpg" alt="image" />
+          </div>
+          <div class="works-five-bottom">
+            <h5>Booking Completion</h5>
+            <p>
+              The Customer fulfills the order by either providing the service to
+              the Customers & Get leads
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="offering-five-all">
+      <div class="offering-five-all-img">
+        <img src="assets/img/bubbles-offering-section.png" alt="" />
+      </div>
+      <div class="row">
+        <div class="col-lg-8 col-md-12">
+          <div class="offering-five-main">
+            <h2>We Are Offering 14 Days Free Trial</h2>
+            <p>
+              Each service provider will have a listing that typically includes
+              a description of their services, pricing, availability, and any
+              special offers or packages.
+            </p>
+            <div class="offering-five-button">
+              <a href="javascript:void(0)" class="btn btn-primary"
+                >Try 14 Days Free Trial<i
+                  class="feather icon-arrow-right-circle"
+                ></i>
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-4 col-md-12">
+          <div class="offering-five-img">
+            <img src="assets/img/offering-worker.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /How It Works -->
+
+<!-- Featured Services -->
+<section class="feature-category-section-five">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="section-heading car-wash-heading aos" data-aos="fade-up">
+          <div class="car-wash-img-five">
+            <img
+              src="assets/img/icons/car-wash-header-1.svg"
+              alt=""
+              class="car-wash-header-one"
+            />
+            <h2>Featured Services</h2>
+            <img
+              src="assets/img/icons/car-wash-header-2.svg"
+              alt=""
+              class="car-wash-header-two"
+            />
+          </div>
+          <p>What do you need to find?</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="feature-service-five-slider">
+          <owl-carousel-o [options]="servicesOwl">
+            <ng-template carouselSlide>
+              <div
+                class="service-widget flex-fill w-100 aos"
+                data-aos="fade-up"
+              >
+                <div class="service-img">
+                  <a [routerLink]="routes.serviceDetails">
+                    <img
+                      class="img-fluid serv-img"
+                      alt="Service Image"
+                      src="assets/img/car-wash/car-01.jpg"
+                    />
+                  </a>
+                  <div class="fav-item">
+                    <div class="features-service-five">
+                      <div class="features-service-rating">
+                        <i class="fas fa-star filled"></i><span>4.9</span>
+                      </div>
+                    </div>
+                    <a href="javascript:void(0)" class="fav-icon fav-icon-five">
+                      <i class="feather icon-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content service-feature-five">
+                  <h3 class="title">
+                    <a [routerLink]="routes.serviceDetails"
+                      >Basic Washing - Compact SUV</a
+                    >
+                  </h3>
+                  <p>
+                    <i class="feather icon-map-pin me-2"></i>Bernardo Street, Tampa,
+                    USA
+                  </p>
+                  <div class="feature-services-five">
+                    <h6>$45.00</h6>
+                    <span>$96.00</span>
+                  </div>
+                  <div class="feature-service-botton">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/img/profiles/avatar-25.jpg" alt="User" />
+                      <p class="fs-14 mb-0 ms-2">Madeline Hilli</p>
+                    </div>
+                    <div>
+                      <a [routerLink]="routes.serviceDetails" class="btn btn-dark"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div
+                class="service-widget flex-fill w-100 aos"
+                data-aos="fade-up"
+              >
+                <div class="service-img">
+                  <a [routerLink]="routes.serviceDetails">
+                    <img
+                      class="img-fluid serv-img"
+                      alt="Service Image"
+                      src="assets/img/car-wash/car-02.jpg"
+                    />
+                  </a>
+                  <div class="fav-item">
+                    <div class="features-service-five">
+                      <div class="features-service-rating">
+                        <i class="fas fa-star filled"></i><span>4.9</span>
+                      </div>
+                    </div>
+                    <a href="javascript:void(0)" class="fav-icon fav-icon-five">
+                      <i class="feather icon-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content service-feature-five">
+                  <h3 class="title">
+                    <a [routerLink]="routes.serviceDetails"
+                      >Interior Washing - Compact SUV</a
+                    >
+                  </h3>
+                  <p>
+                    <i class="feather icon-map-pin me-2"></i>Hartway Street,
+                    Gettysburg, USA
+                  </p>
+                  <div class="feature-services-five">
+                    <h6>$24.00</h6>
+                    <span>$69.00</span>
+                  </div>
+                  <div class="feature-service-botton">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/img/profiles/avatar-15.jpg" alt="User" />
+                      <p class="fs-14 mb-0 ms-2">Cynthia Tyree</p>
+                    </div>
+                    <div>
+                      <a [routerLink]="routes.serviceDetails" class="btn btn-dark"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div
+                class="service-widget flex-fill w-100 aos"
+                data-aos="fade-up"
+              >
+                <div class="service-img">
+                  <a [routerLink]="routes.serviceDetails">
+                    <img
+                      class="img-fluid serv-img"
+                      alt="Service Image"
+                      src="assets/img/car-wash/car-03.jpg"
+                    />
+                  </a>
+                  <div class="fav-item">
+                    <div class="features-service-five">
+                      <div class="features-service-rating">
+                        <i class="fas fa-star filled"></i><span>4.9</span>
+                      </div>
+                    </div>
+                    <a href="javascript:void(0)" class="fav-icon fav-icon-five">
+                      <i class="feather icon-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content service-feature-five">
+                  <h3 class="title">
+                    <a [routerLink]="routes.serviceDetails"
+                      >Vacuum Washing - Compact SUV</a
+                    >
+                  </h3>
+                  <p>
+                    <i class="feather icon-map-pin me-2"></i>Havanna Street,
+                    Greensboro, USA
+                  </p>
+                  <div class="feature-services-five">
+                    <h6>$35.00</h6>
+                    <span>$42.00</span>
+                  </div>
+                  <div class="feature-service-botton">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/img/profiles/avatar-13.jpg" alt="User" />
+                      <p class="fs-14 mb-0 ms-2">Adrian Lessli</p>
+                    </div>
+                    <div>
+                      <a [routerLink]="routes.serviceDetails" class="btn btn-dark"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div
+                class="service-widget flex-fill w-100 aos"
+                data-aos="fade-up"
+              >
+                <div class="service-img">
+                  <a [routerLink]="routes.serviceDetails">
+                    <img
+                      class="img-fluid serv-img"
+                      alt="Service Image"
+                      src="assets/img/car-wash/car-01.jpg"
+                    />
+                  </a>
+                  <div class="fav-item">
+                    <div class="features-service-five">
+                      <div class="features-service-rating">
+                        <i class="fas fa-star filled"></i><span>4.9</span>
+                      </div>
+                    </div>
+                    <a href="javascript:void(0)" class="fav-icon fav-icon-five">
+                      <i class="feather icon-heart"></i>
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content service-feature-five">
+                  <h3 class="title">
+                    <a [routerLink]="routes.serviceDetails"
+                      >Basic Washing - Compact SUV</a
+                    >
+                  </h3>
+                  <p>
+                    <i class="feather icon-map-pin me-2"></i>Bernardo Street, Tampa,
+                    USA
+                  </p>
+                  <div class="feature-services-five">
+                    <h6>$45.00</h6>
+                    <span>$96.00</span>
+                  </div>
+                  <div class="feature-service-botton">
+                    <div class="d-flex align-items-center">
+                      <img src="assets/img/profiles/avatar-25.jpg" alt="User" />
+                      <p class="fs-14 mb-0 ms-2">Madeline Hilli</p>
+                    </div>
+                    <div>
+                      <a [routerLink]="routes.serviceDetails" class="btn btn-dark"
+                        >Book Now</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Featured Services -->
+
+<!-- pricing Section -->
+<section class="pricing-service-five">
+  <div class="pricing-service-topimg d-none d-md-block">
+    <img
+      src="assets/img/bubbles-bottom-section-pricing-1.png"
+      alt="image"
+      class="pricing-five-img-one"
+    />
+  </div>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="section-heading car-wash-heading aos" data-aos="fade-up">
+          <div class="car-wash-img-five">
+            <img
+              src="assets/img/icons/car-wash-header-1.svg"
+              alt="image"
+              class="car-wash-header-one"
+            />
+            <h2>Pricing Plans</h2>
+            <img
+              src="assets/img/icons/car-wash-header-2.svg"
+              alt="image"
+              class="car-wash-header-two"
+            />
+          </div>
+          <p>
+            Designed to effectively communicate your service offerings and their
+            associated costs
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row aos justify-content-center" data-aos="fade-up">
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="pricing-plans pricing-plans-five">
+          <div class="pricing-planshead-five">
+            <div class="providerset-prices-five">
+              <div class="d-flex align-items-center">
+                <h6>$19</h6>
+                <span class="fs-16">/month</span>
+              </div>
+            </div>
+            <h4>Standard Pack</h4>
+          </div>
+          <div class="pricing-planscontent pricing-planscontent-five">
+            <ul>
+              <li>
+                <span>Unleash the power of automation</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Exterior Washing</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Vacuum Cleaning</span>
+              </li>
+              <li>
+                <i class="feather icon-x me-2 text-danger"></i>
+                <span>Interior Wet Cleaning</span>
+              </li>
+              <li>
+                <i class="feather icon-x me-2 text-danger"></i>
+                <span>Window Wiping</span>
+              </li>
+            </ul>
+            <div class="pricing-btn-five">
+              <a [routerLink]="routes.pricing" class="btn btn-primary btn-view"
+                >Choose Plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="pricing-plans pricing-plans-five">
+          <div class="pricing-planshead-five">
+            <div class="providerset-prices-five">
+              <div class="d-flex align-items-center justify-content-start">
+                <h6>$54</h6>
+                <span>/month</span>
+              </div>
+              <div>
+                <span class="bg-warning badge badge-md p-2 rounded-pill"
+                  >Most Popular</span
+                >
+              </div>
+            </div>
+            <h4>Premium</h4>
+          </div>
+          <div class="pricing-planscontent pricing-planscontent-five">
+            <ul>
+              <li>
+                <span>Unleash the power of automation</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Exterior Washing</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Vacuum Cleaning</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Interior Wet Cleaning</span>
+              </li>
+              <li>
+                <i class="feather icon-x me-2 text-danger"></i>
+                <span>Window Wiping</span>
+              </li>
+            </ul>
+            <div class="pricing-btn-five">
+              <a [routerLink]="routes.pricing" class="btn btn-primary btn-view"
+                >Choose Plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-4 col-md-6 col-12">
+        <div class="pricing-plans pricing-plans-five">
+          <div class="pricing-planshead-five">
+            <div class="providerset-prices-five">
+              <div class="d-flex align-items-center">
+                <h6>$89</h6>
+                <span>/month</span>
+              </div>
+            </div>
+            <h4>Enterprice</h4>
+          </div>
+          <div class="pricing-planscontent pricing-planscontent-five">
+            <ul>
+              <li>
+                <span>Unleash the power of automation</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Exterior Washing</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Vacuum Cleaning</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Interior Wet Cleaning</span>
+              </li>
+              <li>
+                <i class="feather icon-check me-2 text-success"></i>
+                <span>Window Wiping</span>
+              </li>
+            </ul>
+            <div class="pricing-btn-five">
+              <a [routerLink]="routes.pricing" class="btn btn-primary btn-view"
+                >Choose Plan</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /pricing Section -->
+
+<!-- testimonals section -->
+<section class="testimonals-five-section pt-0">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="section-heading car-wash-heading aos" data-aos="fade-up">
+          <div class="car-wash-img-five">
+            <img
+              src="assets/img/icons/car-wash-header-1.svg"
+              alt=""
+              class="car-wash-header-one"
+            />
+            <h2>Our testimonials</h2>
+            <img
+              src="assets/img/icons/car-wash-header-2.svg"
+              alt=""
+              class="car-wash-header-two"
+            />
+          </div>
+          <p>
+            Description highlights the value of client feedback, showcases real
+            testimonials
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="car-wash-bg-five-main">
+          <div class="car-wash-bg-five">
+            <div class="row justify-content-center">
+              <div class="col-md-8">
+                <div class="car-testimonials-five-slider">
+                  <owl-carousel-o [options]="testimonal">
+                    <ng-template carouselSlide>
+                      <div class="testimonials-five-top card">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-md-3">
+                              <div class="test-five-img flex-shrink-0 me-3">
+                                <img
+                                  src="assets/img/profiles/avatar-07.jpg"
+                                  alt="image"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <div>
+                                <h2>Best Design and delivered in time</h2>
+                                <p>
+                                  Nay likely her length sooner thrown sex lively
+                                  income. The expense windows adapted sir. Wrong
+                                  widen drawn ample eat off doors money.
+                                  Offending belonging promotion provision an be
+                                  oh consulted ourselves it. Blessing welcomed
+                                  ladyship she met humoured sir breeding her.
+                                  Six curiosity day assurance bed necessary.
+                                </p>
+                              </div>
+
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <div>
+                                  <h6 class="fs-18 text-dark mb-1">Mansur</h6>
+                                  <h6 class="fs-14 text-gray">CEO &#64; airbnb</h6>
+                                </div>
+                                <div class="rating">
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                      <div class="testimonials-five-top card">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-md-3">
+                              <div class="test-five-img">
+                                <img
+                                  src="assets/img/user/user-07.jpg"
+                                  alt="image"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <div>
+                                <h2>Best Design and delivered in time</h2>
+                                <p>
+                                  Nay likely her length sooner thrown sex lively
+                                  income. The expense windows adapted sir. Wrong
+                                  widen drawn ample eat off doors money.
+                                  Offending belonging promotion provision an be
+                                  oh consulted ourselves it. Blessing welcomed
+                                  ladyship she met humoured sir breeding her.
+                                  Six curiosity day assurance bed necessary.
+                                </p>
+                              </div>
+
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <div>
+                                  <h6 class="fs-18 text-dark mb-1">Mansur</h6>
+                                  <h6 class="fs-14 text-gray">CEO &#64; airbnb</h6>
+                                </div>
+                                <div class="rating">
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                    <ng-template carouselSlide>
+                      <div class="testimonials-five-top card">
+                        <div class="card-body">
+                          <div class="row justify-content-center">
+                            <div class="col-md-3">
+                              <div class="test-five-img">
+                                <img
+                                  src="assets/img/user/user-09.jpg"
+                                  alt="image"
+                                />
+                              </div>
+                            </div>
+                            <div class="col-md-9">
+                              <div>
+                                <h2>Best Design and delivered in time</h2>
+                                <p>
+                                  Nay likely her length sooner thrown sex lively
+                                  income. The expense windows adapted sir. Wrong
+                                  widen drawn ample eat off doors money.
+                                  Offending belonging promotion provision an be
+                                  oh consulted ourselves it. Blessing welcomed
+                                  ladyship she met humoured sir breeding her.
+                                  Six curiosity day assurance bed necessary.
+                                </p>
+                              </div>
+
+                              <div
+                                class="d-flex align-items-center justify-content-between"
+                              >
+                                <div>
+                                  <h6 class="fs-18 text-dark mb-1">Mansur</h6>
+                                  <h6 class="fs-14 text-gray">CEO &#64; airbnb</h6>
+                                </div>
+                                <div class="rating">
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                  <i class="fas fa-star filled"></i>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </ng-template>
+                  </owl-carousel-o>
+                  <!-- <ngx-slick-carousel class="slick-slider" #slickModal="slick-carousel" [config]="slideConfig">
+                                        <div class="testimonials-five-top" ngxSlickItem *ngFor="let data of testimonialsData">
+                                            <div class="test-five-img">
+                                                <img [src]="data.img" alt="">
+                                            </div>
+                                            <h2>{{data.heading}}</h2>
+                                            <p>{{data.para}}</p>
+                                            <div class="rating">
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                                <i class="fas fa-star filled"></i>
+                                            </div>
+                                            <h5>{{data.name}}</h5>
+                                            <h6>{{data.role}}</h6>
+                                        </div>
+                                    </ngx-slick-carousel> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /testimonals section -->
+<!-- Partners Section -->
+<section class="blog-section blog-five-section">
+  <div class="container">
+    <div class="col-md-12 text-center">
+      <div class="section-heading car-wash-heading aos" data-aos="fade-up">
+        <div class="car-wash-img-five">
+          <img
+            src="assets/img/icons/car-wash-header-1.svg"
+            alt=""
+            class="car-wash-header-one"
+          />
+          <h2>Our Partner</h2>
+          <img
+            src="assets/img/icons/car-wash-header-2.svg"
+            alt=""
+            class="car-wash-header-two"
+          />
+        </div>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+      </div>
+    </div>
+    <div class="partners-five-slider aos" data-aos="fade-up">
+      <owl-carousel-o [options]="partnersOwl">
+        <ng-container *ngFor="let data of partners">
+          <ng-template carouselSlide>
+            <div class="partner-img">
+              <img [src]="data.img" alt="img" />
+            </div>
+          </ng-template>
+        </ng-container>
+      </owl-carousel-o>
+    </div>
+  </div>
+</section>
+<!-- Partners Section -->
+
+<!-- Service Section -->
+<section class="car-blogs-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div class="section-heading car-wash-heading aos" data-aos="fade-up">
+          <div class="car-wash-img-five">
+            <img
+              src="assets/img/icons/car-wash-header-1.svg"
+              alt=""
+              class="car-wash-header-one"
+            />
+            <h2>Our Blogs</h2>
+            <img
+              src="assets/img/icons/car-wash-header-2.svg"
+              alt=""
+              class="car-wash-header-two"
+            />
+          </div>
+          <p>Here’s a compelling blog description designed to attract readers and provide a clear idea
+            of what they can expect from your blog</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="car-blog-slider">
+          <owl-carousel-o [options]="blogsOwl">
+          
+              <ng-template carouselSlide>
+                <div class="service-widget aos" data-aos="fade-up">
+                    <div class="service-img">
+                        <a [routerLink]="routes.serviceDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                src="assets/img/car-wash/car-07.jpg">
+                        </a>
+                        <div class="fav-item">
+                            <div class="fav-items-content">
+                                <h4 class="item-cat item-car fs-24">25 </h4>
+                                <span class="text-dark fs-14"> Dec</span>
+                            </div>
+                        </div>
+                        <div class="fav-items-container">
+                            <div class="card mb-0">
+                                <div class="card-header border-0 pb-0">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex align-items-center">
+                                            <div class="avatar-sm avatar me-2"><img
+                                                src="assets/img/profiles/avatar-03.jpg" alt="img"
+                                                class="img-fluid rounded-circle ">
+                                        </div>
+                                        <p class="fs-14 text-white">Cynthia Tyree</p>
+                                        </div>
+                                        <div>
+                                            <p class="fs-14 text-white">Car Wash</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="text-white"><a [routerLink]="routes.blogDetails">Benefits Of Keeping Company Cars Clean</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+              </ng-template>
+              <ng-template carouselSlide>
+              <div class="service-widget aos" data-aos="fade-up">
+                <div class="service-img">
+                    <a [routerLink]="routes.serviceDetails">
+                        <img class="img-fluid serv-img" alt="Service Image"
+                            src="assets/img/car-wash/car-08.jpg">
+                    </a>
+                    <div class="fav-item">
+                        <div class="fav-items-content">
+                            <h4 class="item-cat item-car fs-24">25 </h4>
+                            <span class="text-dark fs-14"> Dec</span>
+                        </div>
+                    </div>
+                    <div class="fav-items-container">
+                        <div class="card mb-0">
+                            <div class="card-header border-0 pb-0">
+                                <div class="d-flex align-items-center justify-content-between">
+                                    <div class=" d-flex align-items-center">
+                                        <div class="avatar-sm avatar me-2"><img
+                                            src="assets/img/profiles/avatar-04.jpg" alt="img"
+                                            class="img-fluid rounded-circle ">
+                                    </div>
+                                    <p class="fs-14 text-white">Adrian Lessli</p>
+                                    </div>
+                                    <div>
+                                        <p class="fs-14 text-white">Repairs</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <h5 class="text-white"><a [routerLink]="routes.blogDetails">What Has Changed In The Hand Car Wash Industry?</a></h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            </ng-template>
+            <ng-template carouselSlide>
+                <div class="service-widget aos" data-aos="fade-up">
+                    <div class="service-img">
+                        <a [routerLink]="routes.serviceDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                src="assets/img/car-wash/car-08.jpg">
+                        </a>
+                        <div class="fav-item">
+                            <div class="fav-items-content">
+                                <h4 class="item-cat item-car fs-24">25 </h4>
+                                <span class="text-dark fs-14"> Dec</span>
+                            </div>
+                        </div>
+                        <div class="fav-items-container">
+                            <div class="card mb-0">
+                                <div class="card-header border-0 pb-0">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex align-items-center">
+                                            <div class="avatar-sm avatar me-2"><img
+                                                src="assets/img/profiles/avatar-04.jpg" alt="img"
+                                                class="img-fluid rounded-circle ">
+                                        </div>
+                                        <p class="fs-14 text-white">Adrian Lessli</p>
+                                        </div>
+                                        <div>
+                                            <p class="fs-14 text-white">Repairs</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="text-white"><a [routerLink]="routes.blogDetails">What Has Changed In The Hand Car Wash Industry?</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+    
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="service-widget aos" data-aos="fade-up">
+                    <div class="service-img">
+                        <a [routerLink]="routes.serviceDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                src="assets/img/car-wash/car-07.jpg">
+                        </a>
+                        <div class="fav-item">
+                            <div class="fav-items-content">
+                                <h4 class="item-cat item-car fs-24">25 </h4>
+                                <span class="text-dark fs-14"> Dec</span>
+                            </div>
+                        </div>
+                        <div class="fav-items-container">
+                            <div class="card mb-0">
+                                <div class="card-header border-0 pb-0">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex align-items-center">
+                                            <div class="avatar-sm avatar me-2"><img
+                                                src="assets/img/profiles/avatar-03.jpg" alt="img"
+                                                class="img-fluid rounded-circle ">
+                                        </div>
+                                        <p class="fs-14 text-white">Cynthia Tyree</p>
+                                        </div>
+                                        <div>
+                                            <p class="fs-14 text-white">Car Wash</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="text-white"><a [routerLink]="routes.blogDetails">The Benefits Of Keeping Company Cars Clean</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                </ng-template>
+                <ng-template carouselSlide>
+                <div class="service-widget aos" data-aos="fade-up">
+                    <div class="service-img">
+                        <a [routerLink]="routes.serviceDetails">
+                            <img class="img-fluid serv-img" alt="Service Image"
+                                src="assets/img/car-wash/car-09.jpg">
+                        </a>
+                        <div class="fav-item">
+                            <div class="fav-items-content">
+                                <h4 class="item-cat item-car fs-24">25 </h4>
+                                <span class="text-dark fs-14"> Dec</span>
+                            </div>
+                        </div>
+                        <div class="fav-items-container">
+                            <div class="card mb-0">
+                                <div class="card-header border-0 pb-0">
+                                    <div class="d-flex align-items-center justify-content-between">
+                                        <div class=" d-flex align-items-center">
+                                            <div class="avatar-sm avatar me-2"><img
+                                                src="assets/img/profiles/avatar-03.jpg" alt="img"
+                                                class="img-fluid rounded-circle ">
+                                        </div>
+                                        <p class="fs-14 text-white">Cynthia Tyree</p>
+                                        </div>
+                                        <div>
+                                            <p class="fs-14 text-white">Car Wash</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="card-body">
+                                    <h5 class="text-white"><a [routerLink]="routes.blogDetails">The Benefits Of Keeping Company Cars Clean</a></h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                </ng-template>
+          
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Service Section -->
+
+<!-- App Section -->
+<section class="app-five-section">
+  <div class="container">
+    <div class="app-sec app-sec-five">
+      <div class="row">
+        <div class="col-lg-6 col-12">
+          <div class="col-md-12">
+            <div class="heading aos" data-aos="fade-up">
+              <h2>Download Our App</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+                eiusmod tempor incididunt ut labore et dolore magna aliqua.
+              </p>
+              <h6>Scan the QR code to get the app now</h6>
+            </div>
+          </div>
+          <div class="downlaod-btn aos" data-aos="fade-up">
+            <div class="scan-img">
+              <img src="assets/img/scan-img.png" class="img-fluid" alt="img" />
+            </div>
+            <a [routerLink]="routes.homeFive" target="_blank">
+              <img src="assets/img/googleplay-five.png" alt="img" />
+            </a>
+            <a [routerLink]="routes.homeFive" target="_blank">
+              <img src="assets/img/apple-five.png" alt="img" />
+            </a>
+          </div>
+        </div>
+        <div class="col-lg-6 col-12">
+          <div class="appimg-set aos" data-aos="fade-up">
+            <img
+              src="assets/img/app-sec-five.png"
+              class="img-fluid"
+              alt="img"
+            />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /App Section -->
+<!-- scrollToTop start -->
+<!-- <div
+      (click)="scrollToTop()" (keydown.enter)="scrollToTop()" tabindex="0"
+      class="progress-wrap"
+      [class.active-progress]="strokeValue < progress"
+    >
+      <svg
+        class="progress-circle svg-content"
+        width="100%"
+        height="100%"
+        viewBox="-1 -1 102 102"
+      >
+        <path
+          d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+          style="transition: stroke-dashoffset 10ms linear 0s"
+          attr.stroke-dasharray="{{ progress + 'px' + ',' + progress + 'px' }}"
+          attr.stroke-dashoffset="{{ strokeValue + 'px' }}"
+        ></path>
+      </svg>
+    </div> -->
+<!-- scrollToTop end -->
+<app-home-nine-footer></app-home-nine-footer>
+

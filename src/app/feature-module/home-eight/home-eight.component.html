@@ -1,0 +1,1023 @@
+<app-home-eight-header></app-home-eight-header>
+<!-- Hero Section -->
+<section class="hero-section-eight">
+  <div class="container">
+    <div class="home-banner-eight">
+      <div class="row align-items-center">
+        <div class="col-lg-12 col-md-10 mx-auto">
+          <div class="section-search aos" data-aos="fade-up">
+            <h1>
+              <img src="assets/img/icons/dog.svg" alt="" /> This is the only
+              place for all your <span>pet care</span>
+            </h1>
+            <div class="home-eight-bg">
+              <img src="assets/img/her-section-eight-bg.png" alt="" />
+            </div>
+            <p>
+              The Best Selection For your pet’s needs. A life saving impact from
+              pets in communities across the country.
+            </p>
+            <div class="home-banner-eight-icon">
+              <ul>
+                <li>
+                  <i class="fa fa-check-circle"></i>
+                  <span>Dog Training</span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle"></i>
+                  <span>Pet Sitting</span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle"></i>
+                  <span>Vet on Call</span>
+                </li>
+                <li>
+                  <i class="fa fa-check-circle"></i>
+                  <span>Vaccination</span>
+                </li>
+              </ul>
+            </div>
+            <div class="search-box-two search-box-eight">
+              <form action="/">
+                <div class="search-input-new line-six">
+                  <div class="form-group mb-0">
+                    <mat-select
+                      [(ngModel)]="selectedValue"
+                      [ngModelOptions]="{ standalone: true }"
+                      class="position-cls select-arrow select"
+                      placeholder="Service Category"
+                    >
+                      <mat-option
+                        *ngFor="let data of selectedList"
+                        [value]="data.value"
+                      >
+                        {{ data.value }}
+                      </mat-option>
+                    </mat-select>
+                  </div>
+                </div>
+                <div class="search-input-new line-two-six">
+                  <div class="form-group mb-0">
+                    <i class="feather icon-map-pin"></i>
+                    <input
+                      type="text"
+                      class="form-control"
+                      placeholder="Location"
+                    />
+                  </div>
+                </div>
+                <div class="search-btn">
+                  <button class="btn search_service" type="submit">
+                    Search
+                  </button>
+                </div>
+              </form>
+            </div>
+            <div class="home-eight-dog d-none d-md-block">
+              <img
+                src="assets/img/hero-section-eight.png"
+                alt="image"
+                class="img-fluid"
+              />
+            </div>
+            <div class="home-eight-bg-two d-none d-md-block">
+              <img src="assets/img/her-section-eight-bg.png" alt="image" />
+              <div class="pet-bg-1 d-none d-lg-block">
+                <img src="assets/img/bg/pet-bg-01.png" alt="image" />
+              </div>
+              <div class="pet-bg-2 d-none d-md-block">
+                <img src="assets/img/bg/pet-bg-02.png" alt="image" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- /Hero Section -->
+
+<!-- pricing Section -->
+<section class="category-sections-eight">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div
+          class="section-heading section-heading-eight aos"
+          data-aos="fade-up"
+        >
+          <img src="assets/img/icons/dog.svg" alt="" />
+          <h2>Our Category</h2>
+          <p>A featured services marketplace typically offers a platform</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="category-eight-slider">
+          <owl-carousel-o [options]="pricingPlanOwl">
+            <ng-template carouselSlide>
+              <div class="category-eight-main">
+                <div class="category-eight-img">
+                  <img src="assets/img/pets/pet-01.jpg" alt="image" />
+                </div>
+                <div class="category-eight-img-inside">
+                  <a [routerLink]="routes.search">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <h6 class="mb-2">Pet Adoption</h6>
+                <span>65 Products</span>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="category-eight-main">
+                <div class="category-eight-img">
+                  <img src="assets/img/pets/pet-02.jpg" alt="image" />
+                </div>
+                <div class="category-eight-img-inside">
+                  <a [routerLink]="routes.search">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <h6 class="mb-2">Pet Boarding</h6>
+                <span>65 Products</span>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="category-eight-main">
+                <div class="category-eight-img">
+                  <img src="assets/img/pets/pet-04.jpg" alt="image" />
+                </div>
+                <div class="category-eight-img-inside">
+                  <a [routerLink]="routes.search">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <h6 class="mb-2">Foods</h6>
+                <span>15 Products</span>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="category-eight-main">
+                <div class="category-eight-img">
+                  <img src="assets/img/pets/pet-05.jpg" alt="image" />
+                </div>
+                <div class="category-eight-img-inside">
+                  <a [routerLink]="routes.search">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <h6 class="mb-2">Health</h6>
+                <span>35 Products</span>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="category-eight-main">
+                <div class="category-eight-img">
+                  <img src="assets/img/pets/pet-06.jpg" alt="image" />
+                </div>
+                <div class="category-eight-img-inside">
+                  <a [routerLink]="routes.search">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <h6 class="mb-2">Pet Supplies</h6>
+                <span>65 Products</span>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="category-eight-main">
+                <div class="category-eight-img">
+                  <img src="assets/img/pets/pet-01.jpg" alt="image" />
+                </div>
+                <div class="category-eight-img-inside">
+                  <a [routerLink]="routes.search">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <h6 class="mb-2">Pet Grooming</h6>
+                <span>65 Products</span>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="category-eight-main">
+                <div class="category-eight-img">
+                  <img src="assets/img/pets/pet-02.jpg" alt="image" />
+                </div>
+                <div class="category-eight-img-inside">
+                  <a [routerLink]="routes.search">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <h6 class="mb-2">Pet Grooming</h6>
+                <span>65 Products</span>
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+    <div class="btn-sec btn-saloons btn-pets aos" data-aos="fade-up">
+      <a [routerLink]="routes.serviceDetails" class="btn btn-primary btn-view"
+        >VIEW ALL CATEGORIES</a
+      >
+    </div>
+  </div>
+</section>
+
+<section class="works-eight-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div
+          class="section-heading section-heading-eight aos"
+          data-aos="fade-up"
+        >
+          <img src="assets/img/icons/dog.svg" alt="" />
+          <h2>How it Works</h2>
+          <p>
+            Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur
+            vehicula
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="works-eights-main">
+          <div class="works-eights-img">
+            <img src="assets/img/icons/gui-calendar-planner-eight.svg" alt="" />
+            <div class="works-eights-arrow">
+              <img src="assets/img/icons/arrow-eight-1.svg" alt="" />
+            </div>
+          </div>
+          <p>Connect with your Calendar</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="works-eights-main">
+          <div class="works-eights-img">
+            <img src="assets/img/icons/pointer-eight.svg" alt="" />
+            <div class="works-eights-arrow works-eights-arrow-two">
+              <img src="assets/img/icons/arrow-eight-2.svg" alt="" />
+            </div>
+          </div>
+          <p>Connect with your Calendar</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="works-eights-main">
+          <div class="works-eights-img">
+            <img src="assets/img/icons/dog-face-eight.svg" alt="" />
+            <div class="works-eights-arrow">
+              <img src="assets/img/icons/arrow-eight-1.svg" alt="" />
+            </div>
+          </div>
+          <p>Connect with your Calendar</p>
+        </div>
+      </div>
+      <div class="col-lg-3 col-md-4 col-sm-6 col-12">
+        <div class="works-eights-main">
+          <div class="works-eights-img">
+            <img src="assets/img/icons/pay-per-eight.svg" alt="" />
+          </div>
+          <p>Connect with your Calendar</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="popular-eight-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div
+          class="section-heading section-heading-eight aos"
+          data-aos="fade-up"
+        >
+          <img src="assets/img/icons/dog.svg" alt="" />
+          <h2>Popular Services</h2>
+          <p>
+            Mauris ut cursus nunc. Morbi eleifend, ligula at consectetur
+            vehicula
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div
+        class="col-lg-3 col-md-6 col-sm-6 col-12"
+        *ngFor="let data of popularSection"
+      >
+        <div class="service-widget aos" data-aos="fade-up">
+          <div class="service-img">
+            <a [routerLink]="routes.serviceDetails">
+              <img
+                class="img-fluid serv-img"
+                alt="Service Image"
+                [src]="data.img1"
+              />
+            </a>
+            <div class="fav-item">
+              <div class="features-service-five features-service-eight">
+                <h6>{{ data.heading }}</h6>
+              </div>
+              <a
+                href="javascript:void(0)"
+                class="fav-icon"
+                (click)="data.like = !data.like"
+                [ngClass]="{ selected: data.like === true }"
+                class="fav-icon fav-icon-five"
+              >
+                <i class="feather icon-heart"></i>
+              </a>
+            </div>
+          </div>
+          <div class="service-content service-feature-eight">
+            <div class="shop-content-logo">
+              <img [src]="data.img2" alt="" />
+            </div>
+            <h3 class="title">
+              <a [routerLink]="routes.serviceDetails">{{ data.title }}</a>
+            </h3>
+            <p><i class="feather icon-map-pin"></i>{{ data.country }}</p>
+            <div class="feature-services-eight">
+              <div class="popular-service-eight">
+                <h6>{{ data.price1 }}<span>/hr</span></h6>
+                <p>{{ data.price2 }}</p>
+              </div>
+              <div class="rate">
+                <div class="rate-icon">
+                  <i class="fas fa-star filled"></i
+                  ><span>{{ data.rating }}</span>
+                </div>
+                <h6>{{ data.rate }}</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="btn-sec btn-saloons btn-pets aos" data-aos="fade-up">
+      <a [routerLink]="routes.serviceDetails" class="btn btn-primary btn-view"
+        >VIEW ALL SERVICES</a
+      >
+    </div>
+  </div>
+</section>
+
+<section class="about-us-eight-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="about-eight-main">
+          <img src="assets/img/about-us-eight.png" alt="" />
+          <div class="truely-eight-bg">
+            <img
+              src="assets/img/her-section-eight-bg.png"
+              alt=""
+              class="img-fluid"
+            />
+          </div>
+          <div class="truely-eight-bg-two">
+            <img src="assets/img/her-section-eight-bg.png" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="passion-eight-all">
+          <div
+            class="section-heading section-heading-eight passion-eight-heading aos"
+            data-aos="fade-up"
+          >
+            <img src="assets/img/icons/dog.svg" alt="" />
+            <h2>About Truely sell pet care</h2>
+            <p>Mauris ut cursus nunc.</p>
+          </div>
+          <p>
+            We are proud of the trust we’ve built with our clients and the positive impact we’ve made. 
+            Join the many who have benefited from our expertise and dedication. 
+            Contact us today to see how we can help you achieve your goals with confidence.
+          </p>
+          <ul>
+            <li>
+              <img src="assets/img/icons/pink-dog-feet.svg"  class="me-2" alt="" />
+              <span>The Pet Expert</span>
+            </li>
+            <li>
+              <img src="assets/img/icons/pink-dog-feet.svg" class="me-2" alt="" />
+              <span>Love Your Pet More</span>
+            </li>
+            <li>
+              <img src="assets/img/icons/pink-dog-feet.svg" class="me-2" alt="" />
+              <span>Your Pet, Our Passion</span>
+            </li>
+            <li>
+              <img src="assets/img/icons/pink-dog-feet.svg" class="me-2" alt="" />
+              <span>The Pet Expert</span>
+            </li>
+            <li>
+              <img src="assets/img/icons/pink-dog-feet.svg" class="me-2" alt="" />
+              <span>Love Your Pet More</span>
+            </li>
+            <li>
+              <img src="assets/img/icons/pink-dog-feet.svg" class="me-2" alt="" />
+              <span>Your Pet, Our Passion</span>
+            </li>
+          </ul>
+          <div class="passion-eight-content">
+            <div class="passion-content-top">
+              <img src="assets/img/icons/win.svg" alt="" />
+              <div class="passion-content-bottom">
+                <h2>98.7%</h2>
+                <p>of reviews are 5 star</p>
+              </div>
+              <a href="javascript:void(0);" class="btn btn-primary">Book Now</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="cat-dog-eight-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-12">
+        <div
+          class="section-heading section-heading-eight passion-eight-heading aos aos-init aos-animate"
+          data-aos="fade-up"
+        >
+          <img src="assets/img/icons/dog.svg" class="mb-3" alt="image" />
+          <h2>Numbers Tell our Story</h2>
+          <p>
+            Here’s a compelling description for a “Why Trust Us” , designed to
+            build confidence
+          </p>
+        </div>
+        <div class="row">
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="clients-eights-all">
+              <div class="clients-eight-span">
+                <h3
+                  class="counter"
+                  [countUp]="644"
+                  [options]="{ enableScrollSpy: true }"
+                >
+                  644
+                </h3>
+                <span>+</span>
+              </div>
+              <p>Active Clients</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="clients-eights-all">
+              <div class="clients-eight-span">
+                <h3
+                  class="counter"
+                  [countUp]="356"
+                  [options]="{ enableScrollSpy: true }"
+                >
+                  356
+                </h3>
+                <span>+</span>
+              </div>
+              <p>Professionals</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="clients-eights-all">
+              <div class="clients-eight-span">
+                <h3
+                  class="counter"
+                  [countUp]="123"
+                  [options]="{ enableScrollSpy: true }"
+                >
+                  123
+                </h3>
+                <span>+</span>
+              </div>
+              <p>Pet Services</p>
+            </div>
+          </div>
+          <div class="col-lg-6 col-md-6 col-12">
+            <div class="clients-eights-all">
+              <div class="clients-eight-span">
+                <h3
+                  class="counter"
+                  [countUp]="965"
+                  [options]="{ enableScrollSpy: true }"
+                >
+                  965
+                </h3>
+                <span>+</span>
+              </div>
+              <p>Awards</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="professional-eight-img">
+          <img
+            src="assets/img/professional-eight.png"
+            alt=""
+            class="img-fluid"
+          />
+          <div class="professional-eight-bg">
+            <img src="assets/img/her-section-eight-bg.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="meet-eight-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div
+          class="section-heading section-heading-eight aos"
+          data-aos="fade-up"
+        >
+          <img src="assets/img/icons/dog.svg" alt="" />
+          <h2>Meet our professionals</h2>
+          <p>Browse the trending professionals from the List</p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="professional-eight-slider">
+          <owl-carousel-o [options]="professionalsOwl">
+            <ng-template carouselSlide>
+              <div class="professional-eight-main">
+                <div class="professional-eight-img-ryt">
+                  <img src="assets/img/providers/provider-37.jpg" alt="image" />
+                </div>
+                <div class="professional-eight-img-inside">
+                  <a [routerLink]="routes.providerDetails">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <a [routerLink]="routes.serviceDetails"><h6>Caroline Williams</h6></a>
+                <span class="act">2 Years Experience</span>
+                <div class="rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <span>(10)</span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="professional-eight-main">
+                <div class="professional-eight-img-ryt">
+                  <img src="assets/img/providers/provider-38.jpg" alt="image" />
+                </div>
+                <div class="professional-eight-img-inside">
+                  <a [routerLink]="routes.providerDetails">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <a [routerLink]="routes.serviceDetails"><h6>John Doe</h6></a>
+                <span class="act">2 Years Experience</span>
+                <div class="rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <span>(10)</span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="professional-eight-main">
+                <div class="professional-eight-img-ryt">
+                  <img src="assets/img/providers/provider-39.jpg" alt="image" />
+                </div>
+                <div class="professional-eight-img-inside">
+                  <a [routerLink]="routes.providerDetails">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <a [routerLink]="routes.serviceDetails"><h6>Modona William</h6></a>
+                <span class="act">4 Years Experience</span>
+                <div class="rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <span>(10)</span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="professional-eight-main">
+                <div class="professional-eight-img-ryt">
+                  <img src="assets/img/providers/provider-41.jpg" alt="image" />
+                </div>
+                <div class="professional-eight-img-inside">
+                  <a [routerLink]="routes.providerDetails">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <a [routerLink]="routes.serviceDetails"><h6>Caroline Williams</h6></a>
+                <span class="act">3 Years Experience</span>
+                <div class="rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <span>(10)</span>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div class="professional-eight-main">
+                <div class="professional-eight-img-ryt">
+                  <img src="assets/img/providers/provider-40.jpg" alt="image" />
+                </div>
+                <div class="professional-eight-img-inside">
+                  <a href="#">
+                    <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                    Read more
+                  </a>
+                </div>
+                <a [routerLink]="routes.serviceDetails"><h6>Rictza James</h6></a>
+                <span class="act">2 Years Experience</span>
+                <div class="rating">
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <i class="fas fa-star filled"></i>
+                  <span>(10)</span>
+                </div>
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="customers-eight-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-6 col-12">
+        <div class="customers-eights-all">
+          <div
+            class="section-heading section-heading-eight customers-eight-heading aos"
+            data-aos="fade-up"
+          >
+            <img src="assets/img/icons/dog.svg" alt="" />
+            <h2>Over 1000+ Customers with 5-Star Reviews</h2>
+            <p>Robust Support and Responsiveness</p>
+          </div>
+          <p>
+            Ensuring that we have the skills and insights needed to deliver
+            exceptional results.
+          </p>
+          <ul class="total-client-avatar total-client-avatar-seven">
+            <li>
+              <a href="javascript:void(0);">
+                <img src="assets/img/profiles/avatar-06.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <img src="assets/img/profiles/avatar-07.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <img src="assets/img/profiles/avatar-08.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <img src="assets/img/profiles/avatar-09.jpg" alt="" />
+              </a>
+            </li>
+            <li>
+              <a href="javascript:void(0);">
+                <img src="assets/img/profiles/avatar-10.jpg" alt="" />
+              </a>
+            </li>
+          </ul>
+          <p class="customers-icons">
+            <i class="fas fa-star filled"></i><span>4.9</span>/1000 Reviews
+          </p>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="testimonals-eight-slider">
+          <owl-carousel-o [options]="customersOwl">
+            <ng-container *ngFor="let data of customers">
+              <ng-template carouselSlide>
+                <div class="testimonials-main-ryt customers-eight-main">
+                  <div class="testimonials-content-seven">
+                    <div class="testimonials-seven-img">
+                      <img [src]="data.img" alt="" />
+                    </div>
+                    <img
+                      src="assets/img/icons/test-quote.svg"
+                      alt=""
+                      class="img-fluid"
+                    />
+                  </div>
+                  <div class="testimonials-img-content">
+                    <h6>{{ data.name }}</h6>
+                    <div class="rating">
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                      <i class="fas fa-star filled"></i>
+                    </div>
+                  </div>
+                  <p>{{ data.para }}</p>
+                </div>
+              </ng-template>
+            </ng-container>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="blog-eight-section">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12 text-center">
+        <div
+          class="section-heading section-heading-eight aos"
+          data-aos="fade-up"
+        >
+          <img src="assets/img/icons/dog.svg" alt="" />
+          <h2>Our Blog</h2>
+          <p>
+            Here’s a compelling blog description designed to provide a clear
+            idea
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-md-12">
+        <div class="blog-eight-slider">
+          <owl-carousel-o [options]="blogOwl">
+            <ng-template carouselSlide>
+              <div
+                class="service-widget service-widget-eight aos"
+                data-aos="fade-up"
+              >
+                <div class="service-img">
+                  <a [routerLink]="routes.blogDetails">
+                    <img
+                      class="img-fluid"
+                      alt="Service Image"
+                      src="assets/img/blog/blog-09.jpg"
+                    />
+                  </a>
+                  <div class="service-eight-img-inside">
+                    <a [routerLink]="routes.blogDetails">
+                      <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                      Read more
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content service-eight-blogs">
+                  <h3 class="title">
+                    <a [routerLink]="routes.blogDetails"
+                      >Top Grooming tips for your dog for this summer</a
+                    >
+                  </h3>
+                  <p>
+                    In today’s fast-paced business world, finding the right
+                    services to support your growth can be a game
+                  </p>
+                  <div
+                    class="usefull-bottom useful-bottom-eight d-flex justify-content-between"
+                  >
+                    <a [routerLink]="routes.providerDetails" class="useful-img">
+                      <img src="assets/img/profiles/avatar-10.jpg" alt="User" />
+                      <span>Admin</span>
+                    </a>
+                    <h6><i class="feather-tag"></i>Grooming</h6>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div
+                class="service-widget service-widget-eight aos"
+                data-aos="fade-up"
+              >
+                <div class="service-img">
+                  <a [routerLink]="routes.blogDetails">
+                    <img
+                      class="img-fluid"
+                      alt="Service Image"
+                      src="assets/img/blog/blog-10.jpg"
+                    />
+                  </a>
+                  <div class="service-eight-img-inside">
+                    <a [routerLink]="routes.blogDetails">
+                      <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                      Read more
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content service-eight-blogs">
+                  <h3 class="title">
+                    <a [routerLink]="routes.blogDetails"
+                      >Pet treat s our picks food of favourite recipes</a
+                    >
+                  </h3>
+                  <p>
+                    One of the biggest advantages of using a service marketplace
+                    is the access to a no of services.
+                  </p>
+                  <div
+                    class="usefull-bottom useful-bottom-eight d-flex justify-content-between"
+                  >
+                    <a [routerLink]="routes.providerDetails" class="useful-img">
+                      <img src="assets/img/profiles/avatar-20.jpg" alt="User" />
+                      <span>Admin</span>
+                    </a>
+                    <h6><i class="feather-tag"></i>Grooming</h6>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div
+                class="service-widget service-widget-eight aos"
+                data-aos="fade-up"
+              >
+                <div class="service-img">
+                  <a [routerLink]="routes.blogDetails">
+                    <img
+                      class="img-fluid"
+                      alt="Service Image"
+                      src="assets/img/blog/blog-11.jpg"
+                    />
+                  </a>
+                  <div class="service-eight-img-inside">
+                    <a [routerLink]="routes.blogDetails">
+                      <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                      Read more
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content service-eight-blogs">
+                  <h3 class="title">
+                    <a [routerLink]="routes.blogDetails"
+                      >Cook meals without cook the animals planet</a
+                    >
+                  </h3>
+                  <p>
+                    Before hiring a service provider, check their reviews and
+                    ratings on the marketplace that's important...
+                  </p>
+                  <div
+                    class="usefull-bottom useful-bottom-eight d-flex justify-content-between"
+                  >
+                    <a [routerLink]="routes.providerDetails" class="useful-img">
+                      <img src="assets/img/profiles/avatar-09.jpg" alt="User" />
+                      <span>Admin</span>
+                    </a>
+                    <h6><i class="feather-tag"></i>Grooming</h6>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+            <ng-template carouselSlide>
+              <div
+                class="service-widget service-widget-eight aos"
+                data-aos="fade-up"
+              >
+                <div class="service-img">
+                  <a [routerLink]="routes.blogDetails">
+                    <img
+                      class="img-fluid"
+                      alt="Service Image"
+                      src="assets/img/blog/blog-10.jpg"
+                    />
+                  </a>
+                  <div class="service-eight-img-inside">
+                    <a [routerLink]="routes.blogDetails">
+                      <img src="assets/img/icons/dog-feet.svg" alt="image" />
+                      Read more
+                    </a>
+                  </div>
+                </div>
+                <div class="service-content service-eight-blogs">
+                  <h3 class="title">
+                    <a [routerLink]="routes.blogDetails"
+                      >Pet treat s our picks food of favourite recipes</a
+                    >
+                  </h3>
+                  <p>
+                    One of the biggest advantages of using a service marketplace
+                    is the access to a no of services.
+                  </p>
+                  <div
+                    class="usefull-bottom useful-bottom-eight d-flex justify-content-between"
+                  >
+                    <a [routerLink]="routes.providerDetails" class="useful-img">
+                      <img src="assets/img/profiles/avatar-13.jpg" alt="User" />
+                      <span>Admin</span>
+                    </a>
+                    <h6><i class="feather-tag"></i>Grooming</h6>
+                  </div>
+                </div>
+              </div>
+            </ng-template>
+          </owl-carousel-o>
+        </div>
+      </div>
+    </div>
+    <div class="btn-sec btn-saloons btn-pets aos" data-aos="fade-up">
+      <a [routerLink]="routes.serviceDetails" class="btn btn-primary btn-view"
+        >VIEW ALL BLOGS</a
+      >
+    </div>
+  </div>
+</section>
+
+<section class="healthy-eight-section">
+  <div class="container">
+    <div class="row align-items-center">
+      <div class="col-lg-6 col-12">
+        <div class="pets-content-all">
+          <h2>Keeping your pets</h2>
+          <h1>Happy, Healthy And Safe!</h1>
+          <p>Our dedicated support team is here to assist you every step of the way. Whether you have questions, need support, or require follow-up, we are responsive and ready to help.</p>
+          <a href="javascript:void(0);" class="btn btn-primary rounded">Start Booking Now</a>
+        </div>
+      </div>
+      <div class="col-lg-6 col-12">
+        <div class="healthy-pets-img">
+          <img src="assets/img/healthy-pets.png" alt="" class="img-fluid" />
+          <div class="healthy-eight-bg">
+            <img src="assets/img/her-section-eight-bg.png" alt="" />
+          </div>
+          <div class="healthy-eight-bg-two">
+            <img src="assets/img/her-section-eight-bg.png" alt="" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+<!-- scrollToTop start -->
+<!-- <div
+  (click)="scrollToTop()"
+  (keydown.enter)="scrollToTop()"
+  tabindex="0"
+  class="progress-wrap"
+  [class.active-progress]="strokeValue < progress"
+>
+  <svg
+    class="progress-circle svg-content"
+    width="100%"
+    height="100%"
+    viewBox="-1 -1 102 102"
+  >
+    <path
+      d="M50,1 a49,49 0 0,1 0,98 a49,49 0 0,1 0,-98"
+      style="transition: stroke-dashoffset 10ms linear 0s"
+      attr.stroke-dasharray="{{ progress + 'px' + ',' + progress + 'px' }}"
+      attr.stroke-dashoffset="{{ strokeValue + 'px' }}"
+    ></path>
+  </svg>
+</div> -->
+<!-- scrollToTop end -->
+<app-home-eight-footer></app-home-eight-footer>
+

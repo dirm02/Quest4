@@ -1,0 +1,12 @@
+{
+    "data" : [
+            {
+                "date": "19 Sep 2022, 10:20:20",
+                "device": "Safari Macos",
+                "ipAddress": "333.555.10.54",
+                "location": "Newyork / USA",
+                "status": "Delete"
+            }
+        ],
+        "totalData" : 1
+}
